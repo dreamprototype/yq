@@ -1,0 +1,1127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ===================================================================
+   Reset
+   ================================================================== */
+
+html {
+	font-size:100%;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,figure,form,fieldset,input,legend,pre,abbr {
+	margin:0;
+	padding:0;
+}
+
+fieldset, iframe, img { border:0; }
+
+sup {
+	font-size:smaller;
+	*vertical-align:top;
+}
+
+sub {
+	font-size:smaller;
+	*vertical-align:bottom;
+}
+
+ul { list-style:none; }
+
+ol { 
+    margin:0 0 0 20px;
+    list-style-type:decimal;
+    *margin-left:25px;
+}
+
+
+/* ===================================================================
+   Typography 对应专题样式
+   ================================================================== */
+
+body { 
+    font:14px/1.5 Tahoma, Verdana, Arial, '\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', '\5b8b\4f53', Sans-Serif;
+    *font-family:'\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Sans-Serif;
+	background:url(../images/bannerbg.jpg) center top no-repeat; 
+}
+
+button, a {     /*IE7*/
+    border:none;
+    *+font-family:"Microsoft Yahei";
+    cursor:pointer;
+}
+
+h1, h2, h3, h4, h5 { color:#333;}
+
+h1 {
+    font-size:26px;
+    letter-spacing:4px;
+    margin:0 0 2em 0;
+}
+
+h2 {
+    font-size:20px;
+    letter-spacing:0.18em;
+    margin:0 0 10px 0;
+}
+
+h3 {
+    font-size:18px;
+    letter-spacing:0.15em;
+    margin:0 0 10px 0;
+	 font-weight:normal;
+}
+
+h4 {
+    font-size:16px;
+    letter-spacing:0.1em;
+    margin:8px 0 10px 0;
+}
+
+h5 { 
+    font-size:15px; 
+    margin:0 0 2px 0;
+}
+
+h6 { 
+    font-size:12px;
+    font-weight:normal;
+}
+
+a { 
+    text-decoration:none; 
+    cursor:pointer;
+    color:#333;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -ms-transition:0.5s;
+    transition:0.5s;
+}
+
+a:hover, a:active { color:#b0c0ae; }
+
+strong, .black { color:#333; }
+
+p { margin:0 0 8px 0; }
+
+i { margin-right:10px; }
+
+
+/**
+ * Table 表格
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+	width:100%;
+}
+
+th {
+    background:#69ebd1;
+    color:#fff;
+    font-size:15px;
+    letter-spacing:0.05em;
+    line-height:18px;
+    border:1px solid #1ad2ad;
+    height:30px;
+    text-align:center;
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #69ebd1;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #69ebd1;	
+}
+
+td {
+    padding:5px 2px 5px 6px;
+    border:1px solid #69ebd1;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #e9fcf8;
+}
+
+.subth, .subth th {
+	background:#69ebd1;
+	color:#662d10;
+	font-size:15px;
+	font-weight:500;
+	border:1px solid #e9fcf8;
+}
+
+
+/**
+ * Column 列 / 分栏
+ */
+
+ /* 五栏 */
+ 
+ @media (min-width: 992px){	
+
+.row.row5 .col-md-3 {
+	width:20%
+}
+
+}
+
+/* 有背景模式下的标题 */
+.column-bg h4, .column-bg h5 {
+    padding:10px 8px;
+    text-align:center;
+    width:auto;
+	background:#69ebd1;
+	line-height:24px;
+	color:#fff;
+	margin:0;
+ }
+ 
+.column-bg h4.othercolor, .column-bg h5.othercolor {
+	background:#fcedcd;	
+ }
+ 
+ .column-box {
+	background:#e9fcf8;
+	padding:10px;
+	text-align:center;}
+
+/**
+ * List 列表
+ */
+
+.li-spacing-2x, .li-spacing-2x li { margin:0 0 20px 0; }
+
+.li-spacing, .li-spacing li { margin:0 0 10px 0; }
+
+
+/**
+ * Paragraph 段落
+ */ 
+
+.paragraph-spacing h4, .paragraph-spacing h5 { 
+    margin:20px 0 0 0;
+}
+
+/*END*/
+
+
+/**
+ * title
+ */
+ 
+.title,.reviewtitle {
+	padding:60px  0 0 0;
+	text-align:center;
+    background: url(../images/titlebg.png) no-repeat center top;
+	font-weight: normal;
+	position:relative;
+}
+
+.reviewtitle {
+	background: url(../images/titlebg2.png) no-repeat center top;
+	color:#fff;
+	}
+
+.title  i,.reviewtitle i {
+	position:absolute;
+	background: url(../images/titlemove.png) no-repeat 0 0;
+	width:52px;
+	height:30px;
+	top:20px;
+	left:580px;
+	animation:titlemove 10s linear infinite;
+}
+
+.reviewtitle i {background: url(../images/titlemove2.png) no-repeat 0 0;}
+
+@keyframes titlemove {
+	
+   0% {left:52%;}
+   50% {left:44%;}
+   100% {left:52%;}
+}
+
+.title p {
+	color:#662d10;
+	font-size:14px;
+	letter-spacing:0.2em;
+}
+
+
+h1 span {
+	letter-spacing:0;
+}
+
+.subtitle {
+    color:#69ebd1;
+	font-weight:normal;
+	margin-bottom:30px;
+	line-height:28px;
+	background: url(../images/subtitle_bg.png) no-repeat 0 4px;
+	padding-left:45px;
+}
+
+.sub-title {
+    text-align:center;
+    margin:10px 0 5px 0;
+}
+
+#wrap .fst-title {
+    border-top:none;
+    margin-top:0;
+    padding-top:0;
+}
+/*END*/
+
+
+/**
+ * divider 分隔线
+ */
+
+.divider {
+    padding-top:30px;
+	border-top:1px solid #eee;
+}
+
+.sub-divider {
+    padding-top:30px;
+	border-top:1px dotted #eee;
+}
+/*END*/
+
+
+/**
+ * watermark 水印
+ */
+
+.kc-watermark { position:relative; }
+
+.kc-watermark .watermark {
+	background:url(../../include/images/kc-watermark.png) no-repeat;
+	min-width:500px;
+	min-height:375px;
+	position:absolute;
+	z-index:100;
+	bottom:10px;
+	right:10px;
+}
+
+.watermark-table {
+	width:300px;
+	height:225px;
+	position:absolute;
+	z-index:100;
+	bottom:-20px;
+	right:100px;
+}
+/*END*/
+
+
+/**
+ * fix-side右边栏
+ */
+
+#fix-side {
+    position:fixed;
+    right:20px;
+    top:20px;
+    text-align:center;
+    background:url(../images/right_icon.png) no-repeat;
+    width:130px;
+    z-index:9999;
+}
+
+.fix-side-cont {
+    overflow:hidden;
+    margin:100px 0 20px 0;
+    color:#fff;
+    background:#69ebd1;
+}
+
+.fix-side-cont div { padding:5px 0 0 0; }
+
+.fix-side-cont h4 { color:#fff; }
+
+#wrap .qrcode img {
+    background:#fff;
+    padding:6px;
+    width:100px;
+	margin-top:0;
+}
+
+.phone {
+    line-height:20px;
+    border-bottom:1px solid #fff;
+    font-size:17px;
+}
+
+.gotop {
+    position:static;
+    color:#fff;
+    display:block;
+    line-height:30px;
+    letter-spacing:0.2em;
+    border-top:1px solid #fff;
+}
+
+.gotop:hover,
+.gotop:active { 
+    color:#fff;
+    background:#fcedcd;
+}
+
+#fix-side .fix-menu {
+    width:130px;
+    padding-bottom:0;
+    overflow:hidden;
+}
+
+.fix-menu a {
+    color:#fff;
+    line-height:18px;
+    display:block;
+    text-align:left;
+    padding:8px 5px 8px 22px;
+	border-bottom:1px dotted #fff;
+    background:url(../images/arrow.png) 10px -78px no-repeat;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    -ms-transition:none;
+    transition:none;
+}
+
+.fix-menu a:hover { 
+    color:#69ebd1;
+    background:url(../images/arrow.png) 10px -78px no-repeat #fcedcd;
+}
+
+.fix-menu a.active {
+    background:url(../images/arrow.png) 10px 13px no-repeat #e9fcf8;
+    color:#69ebd1;
+}
+
+/*高度小于第一屏高度时隐藏二维码*/
+.fix-side-small .qrcode { display:none; }
+
+/*宽度小于顶宽时的样式*/
+.fix-menu-mini { display: none; }
+
+.fix-menu-mini a {
+    width:5px;
+    display:block;
+    overflow:hidden;
+    height:5px;
+    background:#ccc;
+    text-indent:100px;
+    margin-top:4px;
+}
+
+.fix-side-mini { display: none; }
+
+/*没有加亮项时的样式*/
+.fix-menu-noSelected { display: block; }
+/*END*/
+
+.gotopbtn {
+    background:url(../images/top.png) no-repeat;
+    display:inline-block;
+    width:28px;
+    height:64px;
+    z-index:1000;
+    position:fixed;
+    cursor:pointer;
+    right:100px;
+    top:auto;
+    bottom:300px;
+}
+
+.gotopbtn:hover {
+    background-position:0 -84px;
+}
+
+
+/* ===================================================================
+   Basic 基础框架
+   ================================================================== */
+   
+#wrap {
+    overflow:hidden;
+    color:#888;
+    width:100%;
+    max-width:1920px;    margin:0 auto;
+}
+/*END*/
+
+
+/* ===================================================================
+   header
+   ================================================================== */
+#header {
+    width:100%;
+    height:90px;
+    margin:0 auto;
+	position:relative;
+}
+
+#logo {
+    display:block;
+    width:212px;
+    height:48px;
+    margin:0 0 0 10px;
+    float:left;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    -ms-transition:none;
+    transition:none;
+}
+
+
+/* ===================================================================
+   navbar
+   ================================================================== */
+   
+#nav {
+    height:80px;
+    width:480px;
+    float:right;
+    z-index:2000;
+}
+
+#nav li {
+    float:left;
+    text-align:left;
+	height:100%;
+	padding:10px 0;	
+	margin-left:20px;
+}
+
+#nav a {
+    line-height: 45px;
+    display: block;
+    font-size: 15px;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition: 0s;
+    -ms-transition: 0s;
+    transition: 0s;
+    color: #ffffff;
+    margin-top: 18px;
+	padding-left: 44px;
+	letter-spacing:5px;
+	width:100px;
+	height:38px;
+}
+
+
+.navbar-default {
+    background: none!important;
+    border: none;
+	height:100%;
+	position: absolute;
+	width:100%;
+    top: 20px;
+	z-index: 999;
+}
+
+.navbar-nav {
+    margin: 0 -15px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #69ebd1;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #69ebd1;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+     border: none; 
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    margin-top: 20px;
+	background-color:#f0f0f0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #666;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+#nav li a:hover,
+#home .home a,
+#RehabilitationTourism1 .rehabilitationtourism1 a, 
+#RehabilitationTourism2 .rehabilitationtourism2 a,
+#RehabilitationTourism3 .rehabilitationtourism3 a{
+	color:#fff;
+	background: url(../images/navbg.png) no-repeat left top;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+#header ul#nav {
+	display:none!important;
+}
+nav.navbar-default {
+	display: block!important;
+}
+#nav li a:hover,
+#home .home a,
+#RehabilitationTourism1 .rehabilitationtourism1 a, 
+#RehabilitationTourism2 .rehabilitationtourism2 a,
+#RehabilitationTourism3 .rehabilitationtourism3 a{
+	color:#333;
+	background: #fff;
+	text-decoration: none;
+}
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+#header ul#nav {
+    display: none!important;
+}
+nav.navbar-default {
+	display: block!important;
+}
+
+.container-fluid {
+	padding:0;
+}
+
+.navbar-default {
+    top: 70px;
+}
+#nav li a:hover,
+#home .home a,
+#RehabilitationTourism1 .rehabilitationtourism1 a, 
+#RehabilitationTourism2 .rehabilitationtourism2 a,
+#RehabilitationTourism3 .rehabilitationtourism3 a {
+	color:#333;
+	background: #fff;
+	text-decoration: none;
+}
+}
+/*END*/
+
+
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	height:460px;
+	position:relative;
+	width:980px;
+	margin:0 auto;
+	z-index:2;
+}
+
+#banner div {
+	width:400px;
+	margin:98px 553px 0 0;
+	float:right;
+	height:350px;
+}
+
+#banner p {
+	color:#fff;
+	line-height:20px;
+	text-align:center;
+	font-size:12px;
+	letter-spacing:0.05em;
+}
+
+/*END*/
+
+
+/* ===================================================================
+   footer
+   ================================================================== */
+#footer {
+    height:500px;
+    overflow:hidden; 
+    font-size:14px;
+    color:#fff;
+	background:url(../images/footbg.jpg) top center no-repeat;
+	padding-top:350px;
+}
+
+.footer { 
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+.contact { 
+    float:right; 
+    margin:0 20px 0 0px; 
+    line-height:16px;
+}
+
+.contact p { margin:0 0 3px 0; }
+
+.contact a { color:#ee8512; }
+
+.contact a:hover, 
+.contact a:active {
+    color:#fff;
+}
+
+#footer .title_foot { 
+    font-size:14px; 
+    font-weight:700;
+    margin:0 0 8px 0;
+}
+
+#footer a , #footer2 a{
+	color:#FFCD00;
+}
+
+#footer2{
+    height:400px;
+    overflow:hidden; 
+    font-size:14px;
+    color:#fff;
+	background:url(../images/footbg.jpg) no-repeat bottom center;
+}
+
+#footer2 .footer { 
+    margin:40px auto 0 auto;
+    overflow:hidden;
+}
+
+#footer2 .col-md-4,#footer2 .col-md-8 {
+	margin-top:50px;
+}
+
+.eng { 
+    font-size:13px; 
+    font-family:tahoma; 
+}
+
+.botlogo a {
+    display:block;
+    margin-top:20px;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+   
+#main {
+    overflow:hidden;
+    width:100%;
+	background-color:#fff;
+	padding-top:80px;
+}
+
+#content {
+    width:100%;
+    min-height:400px;
+    margin:0 auto;
+    position:relative;
+    padding:40px 0 10px 0;
+}
+
+.portfolio-stage {
+    overflow:hidden;
+    margin:0 auto;
+    zoom:1;
+}
+
+.content {
+    overflow:hidden;
+    margin-bottom:50px;
+    zoom:1;
+}
+
+#logo img { margin-top:20px; }
+
+/*END*/
+
+
+/**
+ * timeline 时间轴
+ */
+.time {
+	float:left;
+	width:100%;
+	padding-top:15px;
+	text-align:right;
+	position:relative;
+}
+
+.time dl {
+	margin-bottom:40px;
+	overflow:hidden;
+}
+
+.time dl dd, .time dl dt{
+	padding:0;
+	margin:0;
+}
+
+.time dt i{
+	font-size:16px;
+	color:#69ebd1;
+	background:#fff;	
+}
+
+.time dd.col-xs-2 ,.time dd.col-xs-3 {
+	color:#333;
+	font-size:14px;
+	letter-spacing:0;
+	text-align:right;
+}
+
+.time dt i.fa {margin:0;}
+
+.time dd {
+	color:#333;
+	font-size:14px;
+	letter-spacing:1px;
+	text-align:left;
+}
+
+.time:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left:29%;
+  bottom: 0;
+  width: 0;
+  height: 100% !important;
+  margin-left: 1px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #999999;
+  z-index:0;
+  display: block;
+}
+
+@media (min-width: 768px){	
+.time:before {
+  left:20.76%;
+}
+}
+
+@media (min-width: 1200px){	
+.time:before {
+  left:12.4%;
+}
+}
+/*END*/
+
+/**
+背景篇
+**/
+
+/**现实背景**/
+
+.xsbj i.fa {color:#69ebd1;}
+
+/**政策背景**/
+
+.zcbj .col-md-6  .column-box{
+	line-height:24px;
+	padding:10px 8px;
+}
+
+/**市场背景**/
+
+@media (min-width: 992px){	
+	.scbj .col-md-4 .column-box{
+		min-height:191px;
+	}
+	
+	.scbj .col-md-3 .column-box{
+		min-height:209px;
+	}
+}
+
+@media (min-width: 1200px){	
+	.scbj .col-md-4 .column-box{
+		min-height:170px;
+	}
+	
+	.scbj .col-md-3 .column-box{
+		min-height:170px;
+	}
+}
+
+/**国内外视野**/
+
+@media (min-width: 992px){	
+
+	.gnwsy .col-md-3 .column-box{
+		min-height:410px;
+	}
+	
+	.gnwsy .col-md-2 .column-box{
+		min-height:422px;
+	}
+	
+}
+
+@media (min-width: 1200px){	
+	
+	.gnwsy .col-md-3 .column-box{
+		min-height:421px;
+	}
+	
+	.gnwsy .col-md-2 .column-box{
+		min-height:359px;
+	}
+	
+}
+
+/**小结**/
+
+.xj .col-md-4 .column-box {
+	min-height:164px;
+	line-height:36px;
+}
+
+/**
+要点篇
+**/
+
+/**康养型旅游度假区开发类型**/
+
+.lixing .column-box {text-align:left;}
+
+@media (min-width: 992px){	
+
+	.lixing .col-md-3 .column-box{
+		min-height:410px;
+	}
+	
+}
+
+@media (min-width: 1200px){	
+	
+	.lixing .col-md-3 .column-box{
+		min-height:212px;
+	}
+	
+}
+
+/**资源依托型**/
+
+.shenlin ul li {margin-bottom:20px;}
+
+@media (min-width: 992px){	
+
+	.mgs1 .col-md-4 .column-box{
+		min-height:104px;
+	}
+	
+	.mgs2 .col-md-3 .column-box{
+		min-height:104px;
+	}
+	
+	.qmdt .col-md-2 .column-box{
+		min-height:209px;
+	}
+	
+	.bhys .col-md-4 .column-box,.kwys .col-md-4 .column-box,.zjys .col-md-4 .column-box{
+		min-height:62px;
+	}
+	.qyg .col-xs-4 .column-box{
+		min-height:83px;
+	}
+	.zjhz .col-md-3 .column-box{
+		min-height:125px;
+	}	
+	.cpjg .col-md-3 .column-box{
+		min-height:83px;
+	}
+	
+}
+
+.daoyang .col-md-6 .column-box{
+		min-height:125px;
+	}
+	
+p.pbox {
+	background: #e9fcf8;
+    margin-top: 5px;
+	padding:5px;
+    text-align: center;}
+
+.padding0 {padding:0;}	
+	
+@media (min-width: 1200px){	
+
+	.lixing .col-md-4 .column-box{
+		min-height:212px;
+	}
+	
+	.mgs2 .col-md-3 .column-box{
+		min-height:83px;
+	}
+	.qmdt .col-md-2 .column-box{
+		min-height:167px;
+	}
+	.zjhz .col-md-3 .column-box{
+		min-height:104px;
+	}
+	
+}
+
+/**产业驱动型**/
+
+.mtl2 div {
+	padding-right:0;
+	padding-left:0;}
+
+@media (min-width: 992px){	
+
+	.mtl1 .col-md-3 .column-box{
+		min-height:188px;
+	}
+	.mtl1 .col-md-3 h4{
+		min-height:68px;
+	}
+	
+}
+
+@media (min-width: 1200px){	
+
+	.mtl1 .col-md-3 .column-box{
+		min-height:146px;
+	}
+	
+}
+/**
+实践篇
+**/
+
+/**广西南乡温泉度假区旅游概念性规划**/
+
+.nxwq i.fa {color:#69ebd1;}
+
+@media (min-width: 992px){
+	
+.nxwq .row.marginT40 .col-md-3 .column-box{min-height:267px;}
+
+}
+
+@media (min-width: 1200px){
+	
+.nxwq .row.marginT40 .col-md-3 .column-box{min-height:225px;}
+
+}
+
+/**武当太极湖旅游度假区开发综合策划**/
+
+@media (min-width: 992px){
+	
+.tjh .col-md-3 .column-box{min-height:196px;}
+
+}
+
+@media (min-width: 1200px){
+	
+.tjh .col-md-3 .column-box{min-height:154px;}
+
+}
+
+/**四川省绵竹市九龙山旅游度假区总体策划及概念性规划**/
+
+@media (min-width: 992px){
+	
+.jls .column-bg h4 {min-height:68px;}
+	
+.jls .column-bg p.text-center {min-height:63px;}
+
+.jls .col-md-4 .column-box{min-height:167px;}
+
+.jls .col-xs-4 .column-box,.jls .col-xs-6 .column-box,.jls .col-xs-3 .column-box{min-height:272px;}
+
+}
+
+@media (min-width: 1200px){
+	
+.jls .column-bg h4 {min-height:44px;}
+
+.jls .column-bg p.text-center {min-height:42px;}
+
+.jls .col-md-4 .column-box{min-height:125px;}
+	
+.jls .col-xs-4 .column-box,.jls .col-xs-6 .column-box,.jls .col-xs-3 .column-box{min-height:167px;}
+
+}
+
+/**
+发展环境
+**/
+
+/**发展条件**/
+
+
+@media (min-width: 992px){
+	
+.daolu .col-md-3 h4{min-height:92px;}	
+.daolu .col-md-3 .column-box{min-height:367px;}
+.fangxiang .col-md-3 .column-box{min-height:125px;}
+
+}
+
+@media (min-width: 1200px){
+
+.daolu .col-md-3 h4{min-height:68px;}		
+.daolu .col-md-3 .column-box{min-height:304px;}
+
+}
+
+/**
+运营管理
+**/
+
+/**运营载体——飞行营地**/
+.ydgn .col-md-7 {
+	color:#fff;
+	background-color:#69ebd1;
+	padding:20px;
+}
+
+.ydgn .col-md-7 h4 {color:#fff; }
+
+@media (min-width: 992px){
+	
+.xujiaya .col-xs-6 .column-box{min-height:83px;}
+
+}
+
+@media (min-width: 1200px){
+	
+.xujiaya .col-xs-6 .column-box{min-height:62px;}
+
+}
+
+
