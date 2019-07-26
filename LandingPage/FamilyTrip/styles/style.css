@@ -1,0 +1,1068 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+
+ul { list-style:none; }
+
+ol { 
+    margin:0 0 0 20px;
+	list-style-type:decimal;
+	*margin-left:25px;
+}
+
+body { 
+	font:14px/1.5 Tahoma, Verdana, Arial, '\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', '\5b8b\4f53', Sans-Serif;
+	*font-family:'\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Sans-Serif;
+	background:url(../images/inbanner.jpg) center -40px no-repeat;
+}
+
+button, a {		/*IE7*/
+	border:none;
+	*+font-family:"Microsoft Yahei";		/*IE7*/
+	cursor:pointer;
+}
+
+
+/* ===================================================================
+   Typography 对应专题样式
+   ================================================================== */
+h1, h2, h3, h4, h5 { color:#333; }
+
+h1 {
+	font-size:26px;
+	letter-spacing:4px;
+	margin:0 0 0.2em 0;
+}
+
+h2 {
+	font-size:20px;
+	letter-spacing:0.18em;
+	margin:10px 0;
+}
+
+h3 {
+	font-size:18px;
+	letter-spacing:0.15em;
+}
+
+h4 {
+	font-size:16px;
+	letter-spacing:0.1em;
+	margin:0 0 5px 0;
+}
+
+h5 { 
+	font-size:15px;
+	margin:0 0 5px 0;
+}
+
+h6 { 
+	font-size:12px;
+	font-weight:normal;
+}
+
+a { 
+	text-decoration:none; 
+	cursor:pointer;
+	color:#333;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+a:hover, a:active { color:#8dc63f; }
+
+a img { border:none; }
+
+p { margin:0 0 8px 0; }
+
+strong, .black { color:#333; }
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:5px 0;
+	width:100%;
+}
+
+th {
+	background:#a3d100;
+	color:#fff;
+	font-size:15px;
+	letter-spacing:0.05em;
+	line-height:18px;
+	border:1px solid #a3d100;
+	height:30px;
+	text-align:center;
+}
+
+td {
+	padding:3px 5px;
+	background:#fff;
+	border:1px solid #bbdd44;
+}
+
+.row td, .row { background:#edf5d0; }
+
+i {	margin-right:10px; }
+
+.li-spacing, .li-spacing li { margin:0 0 10px 0; }
+
+.li-spacing-2x, .li-spacing-2x li { margin:0 0 20px 0; }
+/*END*/
+
+
+#wrap {
+	overflow:hidden;
+	color:#666;
+	width:100%;
+	min-width:980px;
+	max-width:1920px;
+	margin:0 auto;
+}
+
+/* ===================================================================
+   header
+   ================================================================== */
+#header {
+	width:980px;
+	height:100px;
+	margin:0 auto;
+}
+
+#logo {
+	display:block;
+	width:241px;
+	height:54px;
+	margin:25px 0 0 10px;
+	float:left;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	-ms-transition:none;
+	transition:none;
+}
+
+
+/* ===================================================================
+   navbar
+   ================================================================== */
+#nav {
+	height:30px;
+	width:560px;
+	float:right;
+	z-index:2000;
+	margin-top:40px;
+}
+
+#nav li {
+	float:left;
+	width:70px;
+	text-align:center;
+	margin:0 20px;
+}
+
+#nav a {
+	height:30px;
+	line-height:30px;
+	font-size:16px;
+	display:block;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	transition: 0s;
+	color:#fff;
+}
+
+#nav li a:hover,
+#home .home a,
+#FamilyTrip1 .FamilyTrip1 a, 
+#FamilyTrip2 .FamilyTrip2 a, 
+#FamilyTrip3 .FamilyTrip3 a, 
+#FamilyTrip4 .FamilyTrip4 a,
+#FamilyTrip5 .FamilyTrip5 a {
+	border-bottom:2px solid #bbdd44;
+	color:#bbdd44;
+}
+/*END*/
+
+
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	background: url(../images/title.png) center 46px no-repeat;
+	height: 512px;
+	overflow: hidden;
+	width: 980px;
+	margin: 0 auto;
+}
+/*END*/
+
+  
+/* ===================================================================
+   footer
+   ================================================================== */
+.footbackbg {
+	background:url(../images/bg.png) repeat-x left -35px ;
+	height:25px;
+	width:100%;
+	position:relative;
+	top:20px;
+}
+   
+#footer {
+	height:350px;
+	overflow:hidden; 
+	font-size:12px;
+	background:url(../images/footbg.jpg) repeat;
+	color:#deead9;
+	margin:0px auto 0 auto;
+}
+
+.footer { 
+	margin:100px auto 0 auto;
+	overflow:hidden;
+	width:980px;
+}
+
+.contact { 
+	float:right; 
+	margin:0 20px 0 0px; 
+	width:36%;
+	line-height:16px;
+}
+
+.contact p { 
+	margin:0 0 3px 0;
+}
+
+.contact a {
+	color:#ffa200;
+}
+
+.contact a:hover, 
+.contact a:active {
+	color:#eff8ce;
+}
+
+#footer .title_foot { 
+	font-size:14px; 
+	font-weight:700;
+	margin:0 0 8px 0;
+}
+
+.eng { 
+	font-size:11px; 
+	font-family:tahoma; 
+	line-height:14px;
+}
+
+.botlogo {
+	float:left;
+	width:190px;
+	height:45px;
+}
+
+.botlogo a {
+	display:block;
+	width:190px;
+	height:45px;
+	margin-top:50px;
+	background:url(../images/footlogo.png) no-repeat;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+#main {
+	overflow:hidden;
+	width:100%;
+	background:url(../images/bg.png) repeat-x;
+}
+
+#content {
+	width:980px;
+	min-height:400px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:60px;
+}
+
+.portfolio-stage {
+	overflow:hidden;
+	margin:0 auto;
+	zoom:1;
+}
+
+.content {
+	overflow:hidden;
+	margin:0 auto 40px auto;
+	zoom:1;
+}
+
+/*4列*/
+.col-4 {
+	overflow:hidden;
+	margin:10px 0;
+}
+
+.col-4 li {
+	float:left;
+	width:25%;
+	display:block;
+}
+
+.col-4 div { margin:0 5%; }
+
+
+/*3列*/
+.col-3 {
+	overflow:hidden;
+	margin:10px 0;
+}
+
+.col-3 li {
+	float:left;
+	width:33%;
+	display:block;
+}
+
+.col-3 div {
+	overflow:hidden;
+	margin:0 5%;
+}
+
+.col-3 p {
+	margin:5px 0 0 0;
+	font-size:15px;
+}
+
+
+/**
+ * 返回顶部
+ */
+.gotopbtn {
+	background:url(../images/top.png) no-repeat;
+	display:inline-block;
+	width:50px;
+	height:76px;
+	z-index:1000;
+	position:fixed;
+	cursor:pointer;
+	right:100px;
+	top:auto;
+	bottom:300px;
+}
+
+.gotopbtn:hover {
+	background-position:0 -97px;
+	height:76px;
+}
+/*END*/
+
+
+/**
+ * fix-side右边栏
+ */
+#fix-side {
+	position:fixed;
+	right:20px;
+	top:20px;
+	text-align:center;
+	background:url(../images/right_icon.png) no-repeat;
+	width:130px;
+	z-index:9999;
+}
+
+.fix-side-cont {
+	overflow:hidden;
+	margin:107px 0 20px 0;
+	color:#fff;
+}
+
+.fix-side-cont div {
+	padding:10px 0;
+	background:#8dc63f;
+}
+
+.fix-side-cont h4 { color:#fff; }
+
+.qrcode img {
+	background:#fff;
+	padding:6px;
+	width:100px;
+}
+
+.phone {
+	line-height:20px;
+	border-bottom:1px solid #fff;
+	font-size:17px;
+}
+
+.gotop {
+	position:static;
+	color:#fff;
+	display:block;
+	line-height:30px;
+	letter-spacing:0.2em;
+	background:#8dc63f;
+	border-top:1px solid #fff;
+}
+
+.gotop:hover,
+.gotop:active { 
+	color:#fff;
+	background:#23caf1;
+}
+
+#fix-side .fix-menu {
+	width:130px;
+	padding-bottom:0;
+	overflow:hidden;
+}
+
+.fix-menu a {
+	color:#fff;
+	line-height:18px;
+	display:block;
+	text-align:left;
+	padding:8px 5px 8px 22px;
+	border-bottom:1px dotted #fff;
+	background:url(../images/arrow.png) 10px 13px no-repeat;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	-ms-transition:none;
+	transition:none;
+}
+
+.fix-menu a:hover { 
+	color:#63981b;
+	background:url(../images/arrow.png) 10px -28px no-repeat #eff8ce;
+}
+
+.fix-menu a.active {
+	background:url(../images/arrow.png) 10px 13px no-repeat #ffa200;
+	color:#fff;
+}
+
+/*高度小于第一屏高度时隐藏二维码*/
+.fix-side-small .qrcode { display:none; }
+
+/*宽度小于顶宽时的样式*/
+.fix-menu-mini { display: none; }
+
+.fix-menu-mini a {
+	width:5px;
+	display:block;
+	overflow:hidden;
+	height:5px;
+	background:#ccc;
+	text-indent:100px;
+	margin-top:4px;
+}
+
+.fix-side-mini { display: none; }
+
+/*没有加亮项时的样式*/
+.fix-menu-noSelected { display: block;}
+/*END*/
+
+
+/**
+ * title
+ */
+.title {
+	background:url(../images/line.png) repeat-x center left;
+	padding-top: 25px;
+	text-align: center;
+	margin: 15px 0;
+	font-weight: 700;
+}
+
+.fst-title {
+	border-top: none;
+	margin-top: 60px;
+	padding-top:0;
+}
+
+.subtitle {
+	background:url(../images/subtitlebg.png) no-repeat;
+	padding:3px 0 0 65px;
+	min-height:55px;
+	color:#8dc63f;
+}
+
+.subtitle h2 {
+	color:#8dc63f;
+	margin:0;
+}
+
+.subtitle-blue {
+	background-position:0 bottom;
+	margin:10px 0 20px 0;
+	color:#23caf1;
+}
+
+.subtitle-blue h2 { 
+	color:#23caf1;
+	margin:0;
+}
+
+.subtitle h3, 
+.subtitle-blue h3 {
+	color:#888;
+	font-weight:normal;
+	margin:0;
+	line-height:18px;
+}
+
+.subtitle-single { line-height:50px; }
+
+.sub-title {
+	text-align:center;
+	margin:0 0 15px 0;
+}
+/*END*/
+
+
+/**
+ * divider 分隔线
+ */
+.divider {
+	border-top:1px solid #eee;
+	padding-top:30px;
+}
+
+.sub-divider {
+	border-top:1px dotted #eee;
+	padding-top:30px;
+}
+/*END*/
+
+
+/**
+ * 市场态势
+ */
+/*亲子游有多火？*/
+.follow-dad ul {
+	margin:5px 0 20px 40px;
+	list-style:disc;
+}
+
+.follow-hotline img {
+	float:left;
+	width:35%;
+}
+
+.follow-hotline ul div {
+	float:right;
+	width:62%;
+	overflow:hidden;
+}
+
+.follow-hotline li {
+	border-bottom:1px dashed #eee;
+	padding:30px 0;
+	display:block;
+	overflow:hidden;
+}
+
+.follow-hotline dl {
+	clear:both;
+	margin:8px 0;
+	overflow:hidden;
+}
+
+.follow-hotline dt {
+	float:left;
+	width:25%;
+}
+
+.follow-hotline dd {
+	float:left;
+	width:75%;
+}
+
+.follow-hotline h6 {
+	clear:both;
+	text-align:right;
+	font-style:italic;
+}
+
+/*为什么这么火？*/
+.why-hot h4 { 
+	text-align:center;
+	margin:5px 0 10px 0;
+	color:#23caf1;
+}
+
+.why-hot h5 { 
+	background:#23caf1;
+	color:#fff;
+	padding:5px 20px;
+	border-radius:15px;
+	margin:30px 0;
+}
+
+.why-hot .col-4 div { margin:0 8%;}
+
+/*亲子游点燃了谁的消费欲望？*/
+.consumer-desire h2 {
+	line-height:50px;
+	color:#8dc63f;
+}
+
+.generation .floatL {
+	padding:20px 0 0 50px;
+	overflow:hidden;
+	width:50%;
+}
+
+.generation ul {	margin:20px 0; }
+
+.generation li i { color:#bbdd44; }
+
+.generation h6 {
+	margin:15% 0 0 0;
+	font-weight:normal;
+}
+
+.generation .floatR {
+	border:1px solid #eee;
+	overflow:hidden;
+	width:42%;
+	padding:20px 0;
+	text-align:center;
+}
+
+.after-80s .portfolio-stage {
+	border:1px solid #eee;
+	padding:20px 0;
+	margin:10px 0;
+}
+
+.after-80s img {
+	clear:both;
+	margin-bottom:20px;
+}
+
+.after-80s h5 {
+	margin:0 0 10px 0;
+	overflow:hidden;
+}
+
+.after-80s h5 span {
+	float:left;
+	width:50%;
+	display:block;
+}
+
+.after-80s .li-spacing {
+	float:left;
+	width:55%;
+	margin:10px 0 0 25px;
+	list-style:disc;
+}
+
+.foreword {
+	background:#8dc63f;
+	color:#fff;
+	padding:30px;
+	overflow:hidden;
+	border-radius:15px;
+	float:right;
+	width:32%;
+}
+
+.after-80s-park h5 {
+	margin:10px 0 5px 0;
+}
+
+.norm { margin:5px 0 20px 0; }
+
+.norm h5 {
+	text-align:center;
+	margin:0 20px;
+	letter-spacing:1px;
+}
+
+.norm div {
+	background:#f5f5f5;
+	height:450px;
+}
+
+.norm li {
+	margin:0;
+	list-style:disc;
+}
+
+.norm p {
+	margin:10px 20px;
+	line-height:24px;
+}
+
+.norm img {
+	width:280px;
+	margin:5px;
+}
+
+/*“互联网+”带来了谁的商机？*/
+.internet .arrow-down {
+	text-align:center;
+	color:#a3d100;
+	margin:20px 0;
+}
+
+.internet .foreword {
+	float:none;
+	margin:0 auto;
+	width:auto;
+}
+
+.internet .foreword li {
+	float:left;
+	margin-right:20px;
+}
+
+.internet .foreword h5 {
+	color:#fff;
+	letter-spacing:0.1em;
+}
+
+.quartet-powers {
+	padding:0 30px 0 0;
+	background:url(../images/img027.png) right center no-repeat;
+}
+
+.quartet-powers li {
+	border-bottom:1px dashed #ddd;
+	padding:20px 0;
+	clear:both;
+	overflow:hidden;
+}
+
+.quartet-powers img {
+	float:left;
+	width:220px;
+}
+
+.quartet-powers div {
+	float:left;
+	width:60%;
+	overflow:hidden;
+	margin:0 0 0 30px;
+	padding:10px 0 0 0;
+}
+
+/*国外孩子假期去哪儿？*/
+.foreign .col-3 {	margin:20px 0 40px; }
+
+
+/**
+ * 产品模式
+ */
+/*年龄阶段与产品特征*/
+.old .col-4 div {
+	background:#8dc63f;
+	min-height:570px;
+	color:#fff;
+}
+
+.old dl {
+	overflow:hidden;
+	padding:0 15px;
+}
+
+.old dt, 
+.old dd {
+	float:left;
+	width:38%;
+	margin:5px 0;
+}
+
+.old dd { width:62%; }
+
+.old img {
+	margin:0;
+	padding:0;
+}
+
+.old h5 {
+	text-align:center;
+	color:#fff;
+	border-bottom:1px dashed #fff;
+	padding:2px 0 8px;
+}
+
+.mapping {
+	border-bottom:1px solid #a3d100;
+	margin:30px 0;
+	text-align:center;
+}
+
+.mapping td {
+	color:#333;
+	border:none;
+	font-size:15px;
+}
+
+.mapping i { color:#a3d100; }
+
+/*公园游乐园类*/
+.park i,
+.farming li i,
+.science i, 
+.sport i, 
+.holiday i { 
+	color:#a3d100;
+}
+
+.map div {
+	margin:70px 0 0 0;
+	float:right;
+}
+
+.map li {
+	margin:8px 0;
+}
+
+.type { margin-top:30px; }
+
+.type div {
+	border-top:1px dashed #eee;
+	overflow:hidden;
+	padding:30px 0;
+}
+
+.type img {
+	float:left;
+	margin:0 20px 0;
+}
+
+.type dl {
+	float:left;
+	width:65%;
+}
+
+.type dt, 
+.type dd {
+	float:left;
+	margin:5px;
+	width:78%;
+}
+
+.type dt {
+	clear:both;
+	text-align:right;
+	width:16%;
+	font-weight:700;
+	color:#333;
+}
+
+/*乡村农业类*/
+.farming .subtitle { margin:10px 0; }
+
+.farming h2 { 
+	display:block;
+	float:left;
+ }
+
+.farming .subtitle a {
+	font-size:15px;
+	font-weight:normal;
+	letter-spacing:0.1em;
+	color:#23caf1;
+	margin:15px 10px 0 10px;
+	float:right;
+}
+
+.farming .subtitle a:hover { color:#ffa200; }
+
+
+/*科普教育类 & 户外运动类*/
+.science dl, .sport dl { width:54%; }
+
+.science dt, .sport dt { width:20%; }
+
+.science dd, .sport dd { width:76%;}
+
+/*休闲度假类*/
+.holiday .col-4 div {
+	margin:0 20px;
+}
+
+.holiday .col-4 h4 {
+	color:#ddd;
+	font-family:Century Gothic;
+	letter-spacing:0.05em;
+	font-size:26px;
+	line-height:30px;
+	margin:0;
+}
+
+.holiday .col-4 span { 
+	color:#333;
+	font-weight:normal;
+	font-size:14px;
+}
+
+.holiday .col-4 h5 {
+	color:#a3d100;
+	margin:0 0 10px 0;
+	letter-spacing:0.1em;
+	line-height:20px;
+}
+
+.special-products div {
+	overflow:hidden;
+	float:left;
+	width:47%;
+	margin:0 30px 0 0;
+	height:280px;
+}
+
+.special-products h5 {
+	margin:5px 0 3px 0;
+	letter-spacing:0.05em;
+}
+
+.facilities li {
+	padding:20px 0;
+	border-top:1px dashed #eee;
+	overflow:hidden;
+}
+
+.facilities img {
+	float:left;
+	margin:0 30px 0 0;
+}
+
+.facilities div {
+	margin:10px 0 0 0;
+	overflow:hidden;
+	line-height:24px;
+}
+
+.club {
+	background:url(../images/img062.jpg) center top no-repeat;
+	height:440px;
+	padding-left:350px;
+	margin:30px 0;
+}
+
+
+/**
+ * 关键法则
+ */
+.key h5 { margin-top:20px; }
+
+.key img { margin:16px 0px;}
+
+/*益智而且有趣*/
+.funny h4 { 
+	text-align:center;
+	margin:5px 0 10px 0;
+	color:#23caf1;
+}
+
+.funny .subtitle { 
+	background-position:0 bottom;
+	margin:10px 0 20px 0;
+}
+
+.funny h2 { color:#23caf1; }
+
+.funny .col-4 div { margin:0 8%;}
+
+.funny .type .floatR {
+	border-top:none;
+	overflow:hidden;
+	width:47%;
+	padding:0;
+}
+
+/*互动而不是观看*/
+.nowatch {	overflow:hidden; }
+
+.nowatch img { border:1px solid #ddd; }
+
+.nowatch li {
+	width:22%;
+	float:left;
+	margin:30px 36px 0px 0px;
+	text-align:center;
+}
+
+/*体验不止于活动*/
+.activitie ul { overflow:hidden; }
+
+.activitie  li {
+	width:17%;
+	text-align:center;
+	float:left;
+	margin-right:36px;
+}
+
+.cartoon ul {
+	overflow:hidden;
+	margin:5px 0 20px;
+}
+
+.cartoon li {
+	width:180px; 
+	float:left;
+	margin:0 8px;
+}
+
+.cartoon-cases li {
+	border-top:1px dashed #ddd; 
+	padding:20px 0;
+	overflow:hidden;
+}
+
+.cartoon-cases img { float:right; }
+
+
+/**
+ * 游器实践
+ */
+.kc-cases div {
+	float: left;
+	width: 33.3%;
+	margin: 20px 0 0 0;
+	overflow: hidden;
+	display: inline-block;
+	height: 240px
+}
+
+.kc-cases a {
+	display: block;
+	width: 300px;
+	text-align: center;
+}
+
+.kc-cases a:hover, 
+.kc-cases a:active {
+	filter:alpha(opacity=80); 
+	-moz-opacity:0.8; 
+	-khtml-opacity:0.8; 
+	opacity:0.8;
+}
+
+.kc-cases1 li {
+	width:50%;
+	float:left;
+	padding-top:8px;
+}

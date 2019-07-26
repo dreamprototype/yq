@@ -1,0 +1,899 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ===================================================================
+   Reset
+   ================================================================== */
+
+html {
+	font-size:100%;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,figure,form,fieldset,input,legend,pre,abbr {
+	margin:0;
+	padding:0;
+}
+
+fieldset, iframe, img { border:0; }
+
+sup {
+	font-size:smaller;
+	*vertical-align:top;
+}
+
+sub {
+	font-size:smaller;
+	*vertical-align:bottom;
+}
+
+ul { list-style:none; }
+
+ol { 
+    margin:0 0 0 20px;
+    list-style-type:decimal;
+    *margin-left:25px;
+}
+
+
+/* ===================================================================
+   Typography 对应专题样式
+   ================================================================== */
+
+body { 
+    font:14px/1.5 Tahoma, Verdana, Arial, '\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', '\5b8b\4f53', Sans-Serif;
+    *font-family:'\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Sans-Serif;
+	background:url(../images/banner.jpg) center -50px  no-repeat;
+}
+
+button, a {     /*IE7*/
+    border:none;
+    *+font-family:"Microsoft Yahei";
+    cursor:pointer;
+}
+
+h1, h2, h3, h4, h5 { color:#333; }
+
+h1 {
+    font-size:26px;
+    letter-spacing:4px;
+    margin:0 0 0.2em 0;
+}
+
+h2 {
+    font-size:20px;
+    letter-spacing:0.18em;
+    margin:0 0 10px 0;
+}
+
+h3 {
+    font-size:18px;
+    letter-spacing:0.15em;
+    margin:0 0 10px 0;
+}
+
+h4 {
+    font-size:16px;
+    letter-spacing:0.1em;
+    margin:0 0 2px 0;
+}
+
+h5 { 
+    font-size:15px; 
+    margin:0 0 2px 0;
+}
+
+h6 { 
+    font-size:12px;
+    font-weight:normal;
+}
+
+a { 
+    text-decoration:none; 
+    cursor:pointer;
+    color:#333;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -ms-transition:0.5s;
+    transition:0.5s;
+}
+
+a:hover, a:active { color:#b0c0ae; }
+
+strong, .black { color:#333; }
+
+p { margin:0 0 8px 0; }
+
+i { margin-right:10px; }
+
+@font-face {
+	font-family:Century Gothic;
+	src:url('../../../font/GOTHIC_1.ttf');
+	font-weight:normal;
+}
+
+
+/**
+ * Table 表格
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+th {
+    background:#a9dfd8;
+    color:#333;
+    font-size:15px;
+    letter-spacing:0.05em;
+    line-height:18px;
+    border:1px solid #fff;
+    height:30px;
+    text-align:center;
+}
+
+td {
+    padding:5px 2px 5px 10px;
+    border:1px solid #fff;
+}
+
+#main .row td, .row { background:#e2f4f2; }
+
+.tablecenter tr td {
+	text-align:center;
+}
+
+/**
+ * Column 列 / 分栏
+ */
+
+.column {
+    overflow:hidden;
+    margin-left:-40px;
+    display: table;
+    content: "";
+}
+
+.column:before, .column:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.column:after { clear: both; }
+
+.column div {
+    float:left;
+    min-height:1px;
+    margin-left:40px;
+    display:block;
+}
+
+/* 三栏 */
+.col-3 { width:300px; }	/* 加在子级div中 */
+
+.col-bg-3 {
+	width:300px;
+	overflow:hidden;
+	background:#e2f4f2;
+}
+
+.col-bg-3 div {
+	margin:20px;
+	overflow:hidden;
+}
+
+/* 四栏 */
+.column-4 { margin-left:-33px; }	/* 加在父级div中 */
+
+.column .col-4 { 	/* 加在子级div中 */
+    width:220px;
+    margin-left:33px;
+}
+
+.column .col-bg-4 {
+	background:#e2f4f2;
+	overflow:hidden;
+	margin-left:33px;
+	width:220px;
+}
+
+.col-bg-4 div {
+	overflow:hidden;
+	margin:0;
+	width:auto;
+	padding:20px;
+}
+
+/* 五栏 */
+.column-5 { margin-left:-35px; }	/* 加在父级div中 */
+
+.column .col-5 { 	/* 加在子级div中 */
+    width:168px;
+    margin-left:35px;
+}
+
+.column .col-bg-5 {
+	background:#907a6d;
+	overflow:hidden;
+	margin-left:35px;
+	width:168px;
+	height:650px;
+}
+
+.col-bg-5 div {
+	overflow:hidden;
+	margin:0;
+	width:auto;
+	padding:20px;
+	color:#fff;
+}
+
+/* 有背景模式下的标题 */
+.column-bg h4, 
+.column-bg h5 {
+    padding:10px 8px;
+    text-align:center;
+    width:auto;
+	background:#70cabe;
+	color:#fff;
+ }
+/*END*/
+
+
+/**
+ * List 列表
+ */
+
+.li-spacing-2x, .li-spacing-2x li { margin:0 0 20px 0; }
+
+.li-spacing, .li-spacing li { margin:0 0 10px 0; }
+
+
+/**
+ * Paragraph 段落
+ */ 
+
+.paragraph-spacing h4, 
+.paragraph-spacing h5 { 
+    margin:20px 0 0 0;
+}
+/*END*/
+
+
+/**
+ * title
+ */
+
+.title {
+	height:50px;
+	padding:0 0 0 44px;
+	color:#333;
+	font-weight:normal;
+}
+
+.subtitle {
+    color:#70cabe;
+    margin:0 0 10px 0;
+	display:inline-block;
+	font-weight:normal;
+}
+
+.sub-title {
+	padding:8px 0;
+	margin-bottom:25px;
+	background:url(../images/dotted_line.png) -300px bottom no-repeat;
+}
+
+#wrap .fst-title {
+    border-top:none;
+    margin-top:0;
+    padding-top:0;
+}
+/*END*/
+
+
+/**
+ * icons
+ */
+ 
+.icon-arrows-down {
+	background:url(../images/arrows.png) no-repeat;
+	height:30px;
+	width:46px;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+/*END*/
+
+
+/**
+ * divider 分隔线
+ */
+
+.divider {
+    padding-top:30px;
+	background:url(../images/line1.png) no-repeat top left;
+}
+
+.sub-divider {
+    padding-top:30px;
+	background:url(../images/line2.png) no-repeat top left;
+}
+/*END*/
+
+
+/**
+ * watermark 水印
+ */
+
+.kc-watermark { position:relative; }
+
+.kc-watermark .watermark {
+	background:url(../../include/images/kc-watermark.png) no-repeat;
+	min-width:500px;
+	min-height:375px;
+	position:absolute;
+	z-index:100;
+	bottom:10px;
+	right:10px;
+}
+
+.watermark-table {
+	width:300px;
+	height:225px;
+	position:absolute;
+	z-index:100;
+	bottom:-20px;
+	right:100px;
+}
+/*END*/
+
+
+/**
+ * fix-side右边栏
+ */
+
+#fix-side {
+    position:fixed;
+    right:20px;
+    top:20px;
+    text-align:center;
+    background:url(../images/right_icon.png) no-repeat center 12px;
+    width:130px;
+    z-index:9999;
+}
+
+.fix-side-cont {
+    overflow:hidden;
+    margin:51px 0 20px 0;
+    color:#fff;
+    background:url(../images/rightbg.jpg) no-repeat center top #70cabe;
+}
+
+.fix-side-cont div { padding:5px 0 0 0; }
+
+.fix-side-cont h4 { color:#fff; }
+
+.qrcode img {
+    background:#fff;
+    padding:6px;
+    width:100px;
+}
+
+.phone {
+    line-height:20px;
+    border-bottom:1px solid #fff;
+    font-size:17px;
+}
+
+.gotop {
+    position:static;
+    color:#fff;
+    display:block;
+    line-height:30px;
+    letter-spacing:0.2em;
+    border-top:1px solid #fff;
+}
+
+.gotop:hover,
+.gotop:active { 
+    color:#fff;
+    background:#f8a88b;
+}
+
+#fix-side .fix-menu {
+    width:130px;
+    padding-bottom:0;
+    overflow:hidden;
+}
+
+.fix-menu a {
+    color:#fff;
+    line-height:18px;
+    display:block;
+    text-align:left;
+    padding:8px 5px 8px 22px;
+	border-bottom:1px dotted #fff;
+    background:url(../images/arrow.png) 10px 13px no-repeat;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    -ms-transition:none;
+    transition:none;
+}
+
+.fix-menu a:hover { 
+    color:#70cabe;
+    background:url(../images/arrow.png) 10px -78px no-repeat #f0faf8;
+}
+
+.fix-menu a.active {
+    background:url(../images/arrow.png) 10px 13px no-repeat #f8a88b;
+    color:#fff;
+}
+
+/*高度小于第一屏高度时隐藏二维码*/
+.fix-side-small .qrcode { display:none; }
+
+/*宽度小于顶宽时的样式*/
+.fix-menu-mini { display: none; }
+
+.fix-menu-mini a {
+    width:5px;
+    display:block;
+    overflow:hidden;
+    height:5px;
+    background:#ccc;
+    text-indent:100px;
+    margin-top:4px;
+}
+
+.fix-side-mini { display: none; }
+
+/*没有加亮项时的样式*/
+.fix-menu-noSelected { display: block;}
+/*END*/
+
+.gotopbtn {
+    background:url(../images/top.png) no-repeat;
+    display:inline-block;
+    width:28px;
+    height:64px;
+    z-index:1000;
+    position:fixed;
+    cursor:pointer;
+    right:100px;
+    top:auto;
+    bottom:300px;
+}
+
+.gotopbtn:hover {
+    background-position:0 -84px;
+}
+
+
+/* ===================================================================
+   Basic 基础框架
+   ================================================================== */
+   
+#wrap {
+    overflow:hidden;
+    color:#666;
+    width:100%;
+    min-width:980px;
+    max-width:1920px;	margin:0 auto;
+}
+/*END*/
+
+
+/* ===================================================================
+   header
+   ================================================================== */
+#header {
+    width:980px;
+    height:90px;
+    margin:0 auto;
+}
+
+#logo {
+    display:block;
+    width:212px;
+    height:48px;
+    margin:20px 0 0 10px;
+    float:left;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    -ms-transition:none;
+    transition:none;
+}
+
+
+/* ===================================================================
+   navbar
+   ================================================================== */
+   
+#nav {
+    height:80px;
+    width:720px;
+    float:right;
+    z-index:2000;
+}
+
+#nav li {
+    float:left;
+    text-align:center;
+	height:100%;
+	padding:0 0px;
+}
+
+#nav a {
+    line-height:70px;
+    font-size:16px;
+    display:block;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition: 0s;
+    -ms-transition: 0s;
+    transition: 0s;
+    color:#333;
+	width:120px;
+	margin-top:12px;
+}
+
+#nav li a:hover,
+#home .home a,
+#TouristTown1 .TouristTown1 a, 
+#TouristTown2 .TouristTown2 a,
+#TouristTown3 .TouristTown3 a,
+#TouristTown4 .TouristTown4 a,
+#TouristTown5 .TouristTown5 a {
+	color:#70cabe;
+	background:url(../images/navbg.png) no-repeat center 3px;
+}
+/*END*/
+
+
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	background:url(../images/title.png) 225px 92px no-repeat;
+	height:440px;
+	position:relative;
+	width:980px;
+	margin:0 auto;
+	z-index:2;
+}
+
+#banner div {
+	display:none;
+}
+
+/*END*/
+
+
+/* ===================================================================
+   footer
+   ================================================================== */
+#footer {
+    height:460px;
+    overflow:hidden; 
+    font-size:12px;
+    color:#333;
+	background:url(../images/footbg.png) no-repeat top center;
+}
+
+.footer { 
+    margin:87px  auto 0 auto;
+    overflow:hidden;
+    width:980px;
+}
+
+.contact { 
+    float:right; 
+    margin:0 20px 0 0px; 
+    width:36%;
+    line-height:16px;
+}
+
+.contact p { margin:0 0 3px 0; }
+
+.contact a { color:#248677; }
+
+.contact a:hover, 
+.contact a:active {
+    color:#333;
+}
+
+#footer .title_foot { 
+    font-size:14px; 
+    font-weight:700;
+    margin:0 0 8px 0;
+}
+
+.eng { 
+    font-size:11px; 
+    font-family:tahoma; 
+    line-height:14px;
+}
+
+.botlogo {
+    float:left;
+    width:190px;
+    height:45px;
+}
+
+.botlogo a {
+    display:block;
+    width:190px;
+    height:45px;
+    margin-top:60px;
+    background:url(../images/footlogo.png) no-repeat;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+   
+#main {
+    overflow:hidden;
+    width:100%;;
+}
+
+#content {
+    width:980px;
+    min-height:400px;
+    margin:0 auto;
+    position:relative;
+    padding:40px 0 10px 0;
+}
+
+.portfolio-stage {
+    overflow:hidden;
+    margin:0 auto;
+    zoom:1;
+}
+
+.content {
+    overflow:hidden;
+    margin:0 auto 50px auto;
+    zoom:1;
+}
+/*END*/
+
+
+/**
+ * 触摸趋势
+ */
+.title1,
+.title2,
+.title3,
+.title4 {
+	height:64px;
+	background:url(../images/titlefont.png) top center no-repeat;
+	display:block;
+}
+ 
+.title2 {
+	background-position:center -200px;
+}
+
+.title3 {
+	background-position:center -400px;
+}
+
+.title4 {
+	background-position:center -600px;
+}
+
+.list1 li {
+	background:url(../images/list1.png) left 3px no-repeat;
+	padding-left:26px;
+}
+
+.pointbg {
+	background:url(../images/pointbg.jpg) top center no-repeat;
+	height:80px;
+	color:#fff;
+	padding-top:30px;
+}
+
+/* 风暴来袭—特色小镇建设分布 */
+.distribution {
+	background:url(../images/img01.png) top center no-repeat;
+	height:570px;
+	margin-top:-50px;
+}
+
+.distribution div {
+	margin-top:160px;
+}
+
+.distribution .floatL p {
+	margin-top:36px;
+}
+
+.distribution .floatR p {
+	margin-top:40px;
+}
+
+/* 动力之源 */
+.power1 .col-bg-3 {
+	height:320px;
+}
+
+.power2 ul {
+	border:#70cabe solid 1px;
+	padding:20px;
+}
+
+.power2 ul h5 {
+	padding-bottom:10px;
+}
+
+.power4 .col-bg-4 {
+	height:310px;
+}
+
+.power4 p span {
+	display:block;
+	color:#70cabe;
+	font-size:16px;
+	letter-spacing:2px;
+	margin-left:-6px;
+}
+
+
+/**
+ * 特色小镇研究
+ */
+.characteristics1 .col-bg-4 {
+	height:220px;
+}
+
+
+
+/**
+ * 旅游小镇研究
+ */
+
+/* 旅游小镇是什么 */
+.characteristics2 .col-bg-4 {
+	height:200px;
+}
+
+/* 模式一 */
+.wtown {
+	background:url(../images/case_logo.png) top center no-repeat;
+	text-align:center;
+	padding:120px 0 0 4px;
+	color:#70cabe;
+}
+
+/*规划布局*/
+.planning {
+	border-bottom:2px solid #70cabe;
+	padding-bottom:10px;
+	margin-top:10px;
+	overflow:hidden;
+}
+
+.planning span {
+	width:16.5%;
+	text-align:center;
+	float:left;
+	font-size:16px;
+	font-weight:700;
+	letter-spacing:1px;
+	color:#70cabe;
+}
+
+.planning1 {
+	position:relative;
+	top:-8px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+.planning1 span {
+	width:16.5%;
+	text-align:center;
+	float:left;
+}
+
+.planning1 i {
+	display:block;
+	padding-bottom:4px;
+	color:#70cabe;
+}
+
+.planning3 {
+	margin-top:-120px;
+}
+
+/* 模式二 */
+.yrgz {
+	background:url(../images/case_logo.png) center -300px no-repeat;
+	text-align:center;
+	padding:120px 0 0 4px;
+	color:#70cabe;
+}
+
+h5 span {
+	color:#666;
+	font-size:14px;
+	font-weight:normal;
+}
+
+/* 模式三 */
+.smilechocolatevillage {
+	background:url(../images/case_logo.png) center -150px no-repeat;
+	text-align:center;
+	padding:120px 0 0 4px;
+	color:#70cabe;
+}
+
+.operating .col-bg-3 {
+	height:200px;
+}
+
+/* 后续研究内容 */
+.subsequent {
+	border:#70cabe solid 1px;
+	padding:20px;
+}
+
+.subsequent ul {
+	overflow:hidden;
+	margin:10px 0 0 -56px;
+}
+
+.subsequent ul li {
+	width:60px;
+	float:left;
+	margin-left:56px;
+}
+ 
+.subsequent .icon-plus {
+	display:block;
+	float:left;
+	color:#c6eae5;
+	font-size:36px;
+	margin:60px 0 0 18px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

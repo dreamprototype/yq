@@ -1,0 +1,818 @@
+﻿/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+
+ul { 
+    list-style:none; 
+}
+
+ol { 
+    margin:0 0 0 25px;
+}
+
+body { 
+	font:14px/1.5 Tahoma, Verdana, Arial, '\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', '\5b8b\4f53', Sans-Serif;
+	*font-family:'\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Sans-Serif;
+	background:url(../images/banner.jpg) center top no-repeat;
+}
+
+button, a {		/*IE7*/
+	border:none;
+	*+font-family:"Microsoft Yahei";		/*IE7*/
+	cursor:pointer;
+}
+
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+}
+/*END*/
+
+
+/* ===================================================================
+   Typography
+   ================================================================== */
+h3 {
+	font-weight:normal;
+	color:#333;
+}
+
+h1 {
+	font-size:26px;
+	letter-spacing:3px;
+	background:url(../images/line.png) no-repeat center 17px;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+h1 a {
+	color:#666;
+}
+
+h1 a:hover, 
+h1 a:active {
+	color:#f4b06b;
+}
+
+h2 {
+	font-size:20px;
+	letter-spacing:0.1em;
+	margin:0 0 10px 0;
+}
+
+h2 a {
+	color:#666;
+}
+
+h2 a:hover,
+h2 a:active {
+	color:#f4b06b;
+}
+
+h3 {
+	font-size:18px;
+	margin:5px 0 3px 0;
+}
+
+h4 {
+	font-size:16px; 
+	margin:0 0 5px 0;
+	letter-spacing:0.15em;
+}
+
+h5 { 
+	font-size:15px;
+	color:#333;
+}
+
+h6 { 
+	font-size:12px;
+}
+
+a { 
+	text-decoration:none; 
+	cursor:pointer;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	color:#666;
+}
+
+a:hover, 
+a:active {
+	color:#6cb92c;
+}
+
+a img {
+	border:none;
+}
+
+p {
+	margin:0 0 10px 0;
+}
+
+.divider {
+	border-top:1px dotted #eee;
+	padding-top:20px;
+}
+
+.borderT {
+	border-top:1px dotted #eee;
+}
+
+.borderT_dotted {
+	border-top:1px dotted #eee;
+}
+
+.borderL_dotted {
+	border-left:1px dotted #eee;
+}
+
+strong {
+	color:#333;
+}
+
+/*END*/
+
+#wrap {
+	overflow:hidden;
+	color:#666;
+	width:100%;
+	min-width:980px;
+	max-width:1920px;	margin:0 auto;
+}
+
+/* ===================================================================
+   header
+   ================================================================== */
+#wapheader {
+	width:100%;
+	background:url(../images/navline.png) repeat-x left bottom;
+}
+
+#header {
+	width:980px;
+	height:80px;
+	margin:0 auto;
+}
+
+#logo {
+	display:block;
+	width:230px;
+	height:52px;
+	margin:15px 0 0 10px;
+	float:left;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	-ms-transition:none;
+	transition:none;
+}
+
+
+/* ===================================================================
+   navbar
+   ================================================================== */
+#nav {
+	height:42px;
+	width:600px;
+	float:right;
+	z-index:2000;
+	margin-top:36px;
+}
+	
+#nav ul {
+	height:42px;
+}
+
+#nav li {
+	float:left;
+	width:80px;
+	text-align:center;
+	margin:0 20px 0 0;
+}
+
+#nav a {
+	height:42px;
+	line-height:42px;
+	font-size:16px;
+	display:block;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	transition: 0s;
+	color:#fff;
+}
+
+#nav li a:hover,
+#home .home a,
+#RusticLuxuryHotel1 .RusticLuxuryHotel1 a, 
+#RusticLuxuryHotel2 .RusticLuxuryHotel2 a, 
+#RusticLuxuryHotel3 .RusticLuxuryHotel3 a, 
+#RusticLuxuryHotel4 .RusticLuxuryHotel4 a,
+#RusticLuxuryHotel5 .RusticLuxuryHotel5 a {
+	border-bottom:2px solid #efd65e;
+	color:#efd65e;
+}
+
+#nav .navCont {
+	float:left;
+	position:relative;
+}
+
+#nav .dropdown {
+	background:#f3a95e;
+	position:absolute;
+	left:0;
+	top:44px;
+	width:100%;
+	height:auto;
+	display:none;
+	filter:alpha(opacity=90); 
+    -moz-opacity:0.9; 
+    -khtml-opacity:0.9; 
+	opacity:0.9;
+	border-bottom:none;
+}
+
+#nav .RusticLuxuryHotel3 ul {
+	width:150px;
+}
+
+#nav .RusticLuxuryHotel4 ul {
+	width:180px;
+}
+
+#nav .dropdown li {
+	display:block;
+	float:none;
+	width:100%;
+}
+
+#nav .dropdown a {
+	float:none;
+	font-size:14px;
+	display:block;
+	width:100%;
+	text-align:center;
+	color:#fff;
+	height:30px;
+	line-height:30px;
+	border-bottom:none;
+}
+
+#nav .dropdown a:hover, 
+#nav .dropdown a:active {
+	border:none;
+	color:#fff;
+	background:#f09d49;
+}
+
+#nav .hoverBg {
+	border-bottom:2px solid #efd65e;
+	color:#efd65e;
+}
+/*END*/
+
+
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	background:url(../images/title.png) center 110px no-repeat;
+	height:550px;
+	overflow:hidden;
+	z-index:10;
+}
+/*END*/
+
+  
+/* ===================================================================
+   footer
+   ================================================================== */
+#footer {
+	height:340px;
+	overflow:hidden; 
+	font-size:12px;
+	background:url(../images/footbg.jpg) repeat;
+	color:#d2c0af;
+	margin:20px auto 0 auto;
+}
+
+.footer { 
+	margin:96px auto 0 auto;
+	overflow:hidden;
+	width:980px;
+}
+
+.contact { 
+	float:right; 
+	margin:0 20px 0 0px; 
+	width:36%;
+	line-height:16px;
+}
+
+.contact p { 
+	margin:0 0 3px 0;
+}
+
+.contact a {
+	color:#f4b06b;
+}
+
+.contact a:hover, 
+.contact a:active {
+	color:#95ba12;
+}
+
+#footer .title_foot { 
+	font-size:14px; 
+	font-weight:700;
+	margin:0 0 8px 0;
+}
+
+.eng { 
+	font-size:11px; 
+	font-family:tahoma; 
+	line-height:14px;
+}
+
+.botlogo {
+	float:left;
+	width:190px;
+	height:45px;
+}
+
+.botlogo a {
+	display:block;
+	width:190px;
+	height:45px;
+	margin-top:50px;
+	background:url(../images/footlogo.png) no-repeat;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+#main {
+	overflow:hidden;
+	width:100%;
+}
+
+#content {
+	min-height:400px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:80px;
+	width:980px;
+}
+
+.main {
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+
+.portfolio_stage {
+	overflow:hidden;
+	margin:0 auto;
+	zoom:1;
+}
+
+.content {
+	width:980px;
+	overflow:hidden;
+	margin:0 auto 60px auto;
+	zoom:1;
+}
+/*END*/
+
+
+/**
+ * 发展概述
+ */
+.concept {
+	margin:50px 0 70px 0px;
+	overflow:hidden;
+}
+
+.concept ul {
+	overflow:hidden;
+	margin:30px 0 10px 0;
+}
+
+.concept li {
+	float:left;
+	width:12%;
+	margin:0 4%;
+}
+
+.concept a:hover span {
+	color:#95ba12;
+}
+
+.concept1 a, 
+.concept2 a, 
+.concept3 a,
+.concept4 a,
+.concept5 a {
+	color:#666;
+	display:block;
+	width:121px;
+	height:158px;
+	position:relative;
+	font-weight:700;
+	background:url(../images/icon_cricle.png) no-repeat;
+}
+
+.concept span {
+	position:absolute;
+	display:block;
+	margin-top:131px;
+	background:#fff;
+	width:100%;
+	text-align:center;
+	letter-spacing:2px;
+	font-size:18px;
+}
+
+.concept1 a:hover, 
+.concept1 a:active {
+	background-position:0 -131px;
+}
+
+.concept2 a {
+	background-position:0 -272px;
+}
+
+.concept2 a:hover, 
+.concept2 a:active {
+	background-position:0 -403px;
+}
+
+.concept3 a {
+	background-position:0 -544px;
+}
+
+.concept3 a:hover, 
+.concept3 a:active {
+	background-position:0 -675px;
+}
+
+.concept4 a {
+	background-position:0 -816px;
+}
+
+.concept4 a:hover, 
+.concept4 a:active {
+	background-position:0 -947px;
+}
+
+.concept5 a {
+	background-position:0 -1088px;
+}
+
+.concept5 a:hover, 
+.concept5 a:active {
+	background-position:0 -1219px;
+}
+
+/**
+*客群研究
+*/
+
+.research {
+	margin:50px 0 70px 0px;
+	overflow:hidden;
+}
+
+.research ul {
+	overflow:hidden;
+	margin:30px 0 10px 0;
+}
+
+.research li {
+	float:left;
+	width:8%;
+	margin:0 42px;
+}
+
+.research a:hover span {
+	color:#95ba12;
+}
+
+.research1 a, 
+.research2 a, 
+.research3 a,
+.research4 a,
+.research5 a,
+.research6 a {
+	color:#666;
+	display:block;
+	width:80px;
+	height:96px;
+	position:relative;
+	font-weight:700;
+	background:url(../images/icon_pic.png) no-repeat;
+	background-position:center 0;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	transition: 0s;
+}
+
+.research span {
+	position:absolute;
+	display:block;
+	margin-top:70px;
+	background:#fff;
+	width:100%;
+	text-align:center;
+	letter-spacing:2px;
+	font-size:18px;
+}
+
+.research1 a:hover, 
+.research1 a:active {
+	background-position:center -70px;
+}
+
+.research2 a {
+	background-position:center -150px;
+}
+
+.research2 a:hover, 
+.research2 a:active {
+	background-position:center -220px;
+}
+
+.research3 a {
+	background-position:center -290px;
+}
+
+.research3 a:hover, 
+.research3 a:active {
+	background-position:center -360px;
+}
+
+.research4 a {
+	background-position:center -440px;
+}
+
+.research4 a:hover, 
+.research4 a:active {
+	background-position:center -510px;
+}
+
+.research5 a {
+	background-position:center -590px;
+}
+
+.research5 a:hover, 
+.research5 a:active {
+	background-position:center -660px;
+}
+
+.research6 a {
+	background-position:center -740px;
+}
+
+.research6 a:hover, 
+.research6 a:active {
+	background-position:center -810px;
+}
+
+/**
+*个性化风格设计
+*/
+.visitor_center {
+	border-top:1px dotted #eee;
+	padding-top:20px;
+	margin-top:20px;
+}
+
+.visitor_center ul {
+	overflow:hidden;
+	margin-top:20px;
+}
+
+.visitor_center li {
+	margin-right:20px;
+	float:left;
+	width:225px;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:2px;
+	font-weight:700;
+}
+
+.visitor_center li img {
+	margin-bottom:4px;
+	*margin-bottom:6px;
+}
+
+.visitor_center ul li a {
+	display:block;
+	color:#666;
+}
+
+.visitor_center ul li a:hover {
+	color:#f4b06b;
+}
+
+.visitor_center ul li a:hover img {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/**
+ *  他山之石
+ */
+.cases {
+	margin-top:20px;
+}
+
+.cases ul {
+	overflow:hidden;
+	margin-top:20px;
+}
+
+.cases li {
+	margin-right:26px;
+	float:left;
+	width:300px;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:2px;
+	font-weight:700;
+}
+
+.cases li img {
+	margin-bottom:4px;
+	*margin-bottom:6px;
+}
+
+.cases ul li a {
+	display:block;
+	color:#666;
+}
+
+.cases ul li a:hover {
+	color:#f4b06b;
+}
+
+.cases ul li a:hover img {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+
+.kcnancese a:hover img {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/**
+ * 返回顶部
+ */
+.gotopbtn {
+	background:url(../images/top.png) no-repeat;
+	display:inline-block;
+	width:40px;
+	height:53px;
+	z-index:1000;
+	position:fixed;
+	cursor:pointer;
+	right:100px;
+	top:auto;
+	bottom:300px;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	transition: 0s;
+}
+
+.gotopbtn:hover {
+	background-position:0 -64px;
+}
+
+/*END*/
+
+
+/**
+ * 其它专题
+ */
+.review {
+	height:180px;
+	overflow:hidden;
+}
+
+.review .title {
+	color:#666;
+	letter-spacing:3px;
+	background:url(../images/line.png) no-repeat center 17px;
+	text-align:center;
+	zoom:1;
+	font-weight:700;
+	height:auto;
+}
+
+.review li img {
+	width:190px;
+	height:86px;
+	padding:0;
+	border:none;
+}
+
+.infiniteCarousel {
+	width:980px;
+	position:relative;
+	height:86px;
+	margin:25px 0 0 0;
+}
+
+.infiniteCarousel .wrapper {
+	width:900px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+	overflow: auto;
+	height:86px;
+	margin:0 35px;
+	position:absolute;
+	top:0;
+}
+
+.infiniteCarousel .wrapper ul {
+	width:920px; /* single item * n */
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+}
+
+.infiniteCarousel ul:hover li img {
+	border-color:#ddd;
+}
+
+.infiniteCarousel ul:hover li:hover img {
+	border-color:#333;
+}
+
+.infiniteCarousel ul li {
+    display:block;
+    float:left;
+    height:88px;
+    padding:0 18px;
+    width:190px;
+}
+
+.infiniteCarousel ul li a img {
+	display:block;
+}
+
+.infiniteCarousel .arrow {
+	display:block;
+	height:22px;
+	width:15px;
+	background:url(../../include/images/arrow_review.png) 0 0 no-repeat;
+	text-indent:-999px;
+	position:absolute;
+	top:30px;
+	cursor:pointer;
+	outline:0;
+}
+
+.infiniteCarousel .forward {
+	background-position:-20px 0;
+	right:0;
+}
+
+.infiniteCarousel .forward:hover {
+	background-position:-20px -25px;
+}
+
+.infiniteCarousel .back {
+	background-position:0 0;
+	left:0;
+}
+
+.infiniteCarousel .back:hover {
+	background-position:0 -25px;
+}

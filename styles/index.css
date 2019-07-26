@@ -1,0 +1,1121 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ===================================================================
+   Typography
+   ================================================================== */
+h1 {
+    font-size: 30px;
+	margin: 0.625em 0;
+}
+
+h2 {
+    font-size: 26px;
+	margin: 0.5em 0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 10pt;
+}
+/*END*/
+
+
+/* ===================================================================
+   Base
+   ================================================================== */
+a {
+	cursor:pointer;
+	text-decoration:none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	color:#666;
+}
+
+a:hover {
+	color:#2ba7e8;
+}
+
+a img {
+	border:none;
+}
+
+p {
+	margin:0 0 10px 0;
+}
+/*END*/
+
+#wrap {
+	margin:0 auto;
+	overflow:hidden;
+	min-width:1024px;
+	max-width:1920px;
+}
+
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	overflow:hidden;
+	width:100%;
+	height:445px;
+	margin:102px auto 0 auto;
+	max-width:1440px;
+}
+
+#banner .slide {
+	display:block;
+	width:100%;
+	height:445px;
+}
+
+#iview {
+	display:block;
+	width:100%;
+	height:445px;
+	position:relative;
+	overflow:hidden;
+}
+
+#iview .iviewSlider {
+	display:block;
+	width:100%;
+	height:445px;
+	margin:0px auto;
+}
+
+#iview div.iview-directionNav {
+	top: 49%;
+}
+
+#iview .iview-controlNav {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	*left: 47%;
+	margin-left:8px;
+}
+
+#iview .iview-items {
+	position:relative;
+	margin-left:-50%;
+}
+
+#iview .iview-controlNav a {
+	text-indent: -9999px;
+}
+
+#iview .iview-controlNav a.iview-control {
+	padding: 0px;
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: url('../images/circle.png') no-repeat 0px -27px;
+	line-height: 0px;
+	margin-right: 7px;
+}
+
+#iview .iview-controlNav a.iview-control.active {
+	background-position: 0px 0px;
+}
+
+.iview div.iview-directionNav {
+	position: absolute;
+	top: 37%;
+	left: 0px;
+	z-index: 9;
+	width: 100%;
+}
+
+.iview div.iview-directionNav a {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background-image: url(../images/bg_direction_nav_white.png);
+	text-indent: -9999px;
+	-webkit-transition: left 0.3s ease-in-out;
+	-webkit-transition-property: left,right;
+	-moz-transition: left 0.3s ease-in-out;
+	-moz-transition-property: left,right;
+	-o-transition: left 0.3s ease-in-out;
+	-o-transition-property: left,right;
+	-ms-transition: left 0.3s ease-in-out;
+	-ms-transition-property: left,right;
+	transition: left 0.3s ease-in-out;
+	transition-property: left,right;
+}
+
+.iview div.iview-directionNav a.iview-nextNav {
+	right: -27px;
+	background-position: 27px 0px;
+}
+
+.iview div.iview-directionNav a.iview-prevNav {
+	left: -27px;
+	background-position: 0px 0px
+}
+
+.iview.iview-hover div.iview-directionNav a.iview-nextNav {
+	right: 20px;
+}
+
+.iview.iview-hover div.iview-directionNav a.iview-prevNav {
+	left: 20px;
+}
+
+.iview-caption {
+	background: url('../images/caption-bg.png');
+	color: #FFF;
+	border-radius: 3px;
+	padding: 10px 15px;
+	font-family: Verdana;
+	font-size: 12px;
+	text-shadow: #000 1px 1px 0px;
+}
+
+.iview-caption.caption1 {
+	text-shadow: none;
+}
+
+.iview-caption.caption2 {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+}
+
+.iview-caption.caption3 {
+	background: #c4302b;
+	box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+	text-shadow: none;
+}
+
+#iview-preloader {
+	border: #666 1px solid;
+	width: 150px;
+}
+
+#iview-preloader div {
+	background: #666;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+#main {
+	margin:0 auto;
+	min-height:600px;
+}
+
+.mainborder {
+	border-top:3px solid #2ba7e8;
+}
+
+#content {
+	margin:30px auto 50px auto;
+	overflow:hidden;
+	width:980px;
+}
+
+#content div {
+	overflow:hidden;
+	zoom:1;
+}
+
+.content {
+	border-bottom:1px solid #eee;
+}
+
+.partL {
+	width:50%;
+	float:left;
+}
+
+.partR {
+	width:41%;
+	float:right;
+}
+
+/**
+ * more
+ */
+.more {
+	display:block;
+	border:1px solid #666;
+	border-radius:20px;
+	width:88px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	-webkit-transition:background 2s ease;
+	-ms-transition:background 2s ease;
+	transition:background .2s ease;
+	z-index:500;
+	zoom:1;
+}
+
+.more span {
+	position:relative;
+	left:10px;
+	-webkit-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out;
+	transition:all .2s ease-out;
+	color:#333;
+	font-family:"Century Gothic";
+	top:-1px;
+	*top:2px;
+}
+
+.more i {
+	position:relative;
+	display:inline-block;
+	filter:alpha(opacity=00);
+	-moz-opacity: 0;
+	opacity: 0;
+	width:16px;
+	height:12px;
+	left:0px;
+	top:0px;
+	-webkit-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+	*top:-4px;
+}
+
+.more:hover {
+	border:1px solid #2ba7e8;
+}
+
+.more:hover span {
+	left:-3px;
+	color:#2ba7e8;
+	*top:0px;
+}
+
+.more:hover i {
+	filter:alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+	left:3px;
+	background:url(../images/arrow.png) left top no-repeat;
+}
+
+
+/**
+ * support
+ */
+#support {
+	overflow:hidden;
+	margin:5px auto;
+	min-width:980px;
+	width:100%;
+	max-width:1440px;
+	height:200px;
+}
+ 
+#support li {
+	float:left;
+	overflow:hidden;
+	margin:0;
+	width:25%;
+	height:200px;
+	zoom:1;
+}
+
+.support1 a, 
+.support2 a, 
+.support3 a, 
+.support4 a {
+	height:200px;
+	width:auto;
+	display:block;
+	overflow:hidden;
+	margin-left:5px;
+}
+
+.support1 a {
+	background:url(../images/support_lvmama.png) center top no-repeat;
+	margin-left:0px;
+}
+
+.support2 a {
+	background:url(../images/support_joyuyx.png) center top no-repeat;
+}
+
+.support3 a {
+	background:url(../images/support_joyulf.png) center top no-repeat;
+}
+
+.support4 a {
+	background:url(../images/support_campsort.png) center top no-repeat;
+}
+
+#support a:hover, 
+#support a:active {
+	background-position:center bottom;
+}
+
+
+/**
+ * landingpage
+ */
+#landingpage {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	margin: 5px auto;
+	min-width: 980px;
+	width: 100%;
+	max-width: 1440px;
+	height: 200px;
+	text-align: center;
+}
+
+#landingpage li {
+	position: relative;
+	z-index: 1;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	width: 25%;
+	height: 200px;
+	zoom:1;
+}
+
+#landingpage .adjust {
+	*margin-right:-100px;
+}
+
+#landingpage a {
+	height:200px;
+	width:100%;
+	position: absolute;
+	left:0;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	border-left:5px solid #fff;
+}
+
+.master {
+	position: absolute;
+	right:0;
+	z-index:2;
+	width:100%;
+	height:200px;
+	display:block;
+	background:#29a6e8;
+	filter:alpha(opacity=40);
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+}
+
+#landingpage img {
+	position:absolute;
+	width:400px;
+	top:-5px;
+	left:50%;
+	margin-left:-200px;
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+#landingpage a:hover img {
+	-webkit-filter:none;
+	-moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+	filter:none;
+}
+
+#landingpage a:hover .master {
+	filter:alpha(opacity=00);
+	-moz-opacity: 0;
+	opacity: 0;
+	-webkit-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+#landingpage .title a {
+	background:url(../images/kcimg.png) center -600px no-repeat #117ab3;
+	color:#fff;
+}
+
+#landingpage .title a:hover {
+	background:url(../images/kcimg.png) center -600px no-repeat #29a6e8;
+}
+
+#landingpage .more {
+	position:absolute;
+	bottom:50px;
+	left:50%;
+	margin-left:-45px;
+	border:1px solid #fff;
+}
+
+#landingpage span {
+	color:#fff;
+	*top:0px;
+}
+
+#landingpage .more i {
+	background:url(../images/arrow.png) left -80px no-repeat;
+	*top:-5px;
+}
+
+
+/**
+ * title
+ */
+h2 {
+	width:980px;
+	margin:0 auto;
+	display:block;
+	color:#333;
+	letter-spacing:0.1em;
+	height:30px;
+	line-height:28px;
+	border-left:1px solid #eee;
+	text-indent:15px;
+}
+
+h2 span {
+	color:#888;
+	font-family:Century Gothic;
+	font-size:11pt;
+	margin:0 5px;
+	letter-spacing:0;
+	font-weight:normal;
+	line-height:20px;
+}
+
+h2 a {
+	color:#333;
+}
+
+h2 a:hover {
+	color:#29a6e8;
+}
+
+/**
+ * 专业服务
+ */
+.servicebox {
+	zoom:1;
+	padding:0 0 10px 0;
+	overflow:hidden;
+}
+
+#content .servicebox h2 {
+	margin-top:0;
+}
+
+.servicebox ul {
+	width:980px;
+	margin:10px auto;
+	overflow:hidden;
+}
+
+.servicebox ul div {
+	margin:20px 25px;
+}
+
+.servicebox li {
+	float:left;
+	width:25%;
+	position:relative;
+}
+
+.sort1 a, .sort2 a, .sort3 a, .sort4 a {
+	background:url(../images/icon-case.png) -20.8% 0 no-repeat;
+	display:block;
+	width:100%;
+	height:130px;
+}	
+
+.sort2 a {
+	background-position:-20.8% -386px;
+}
+
+.sort3 a {
+	background-position:-20.8% -772px;
+}
+
+.sort4 a {
+	background-position:-20.8% -1158px;
+}
+
+.sort1 a:hover {
+	background-position:-20.8% -160px;
+}
+
+.sort2 a:hover {
+	background-position:-20.8% -544px;
+}
+
+.sort3 a:hover {
+	background-position:-20.8% -926px;
+}
+
+.sort4 a:hover {
+	background-position:-20.8% -1310px;
+}
+/*
+.servicebox li {
+	float:left;
+	width:33.33%;
+	position:relative;
+}
+
+.sort1 a, .sort2 a, .sort3 a {
+	background:url(../images/icon-case.png) -42.8% 0 no-repeat;
+	display:block;
+	width:100%;
+	height:140px;
+}	
+
+.sort2 a {
+	background-position:-42.8% -386px;
+}
+
+.sort3 a {
+	background-position:-42.8% -772px;
+}
+
+.sort1 a:hover {
+	background-position:-42.8% -160px;
+}
+
+.sort2 a:hover {
+	background-position:-42.8% -544px;
+}
+
+.sort3 a:hover {
+	background-position:-42.8% -926px;
+}
+*/
+.servicebox ul span {
+	position:absolute;
+	top:110px;
+	width:100%;
+	text-align:center;
+	font-size:20px;
+	color:#333;
+	letter-spacing:0.1em;
+	height:30px;
+	background:#fff;
+	line-height:30px;
+}
+
+.servicebox a:hover span {
+	color: #2ba7e8;
+}
+
+/**
+ * 游器简介
+ */
+/**
+.about, 
+.service, 
+.ourcases, 
+.joinus {
+	border-bottom:1px solid #eee;
+	line-height:24px;
+	min-height:300px;
+}
+
+#content h2 {
+	margin:10px 0px 20px 0px;
+}
+
+.about {
+	min-height:270px;
+	padding-top:30px;
+	border-top:1px solid #eee;
+}
+
+.about p {
+	margin:0 0 20px 0;
+	line-height:22px;
+}
+
+.logos {
+	width:41%;
+	float:right;
+	margin:10px 0px 20px 0px;
+}
+
+.kchance, .lvmama, .joyu, .joyulf, 
+.freetrip, .campsort, .joyuyx, .feilvway {
+	width:154px;
+	height:36px;
+	background:url(../images/icologo.png) no-repeat;
+	display:block;
+	float:left;
+}
+
+.kchance:hover {
+	background-position:0 -53px;
+}
+
+.lvmama {
+	width:96px;
+	height:33px;
+	background-position:0 -116px;
+	margin-left:50px;
+}
+
+.lvmama:hover {
+	background-position:0 -166px;
+}
+
+.joyu {
+	width:222px;
+	height:40px;
+	background-position:0 -225px;
+	margin:20px 60px 20px 36px;
+}
+
+.joyu:hover {
+	background-position:0 -284px;
+}
+
+.joyulf {
+	clear:both;
+	width:100px;
+	height:24px;
+	background-position:0 -492px;
+	margin-top:8px;
+}
+
+.joyulf:hover {
+	background-position:0 -535px;
+}
+
+.freetrip {
+	width:94px;
+	height:24px;
+	background-position:0 -714px;
+	margin:0px 28px 0px 40px;
+}
+
+.freetrip:hover {
+	background-position:0 -759px;
+}
+
+.campsort {
+	width:69px;
+	height:42px;
+	background-position:0 -355px;
+	margin-top:-16px;
+}
+
+.campsort:hover {
+	background-position:0 -419px;
+}
+
+.joyuyx {
+	clear:left;
+	width:100px;
+	height:40px;
+	background-position:0 -588px;
+	margin:20px 60px 0px 40px;
+}
+
+.joyuyx:hover {
+	background-position:0 -646px;
+}
+
+.feilvway {
+	width:111px;
+	height:24px;
+	background-position:0 -814px;
+	margin:30px 0;
+	*margin:40px 0 0 80px;
+}
+
+.feilvway:hover {
+	background-position:0 -858px;
+}
+**/
+
+.about, 
+.service, 
+.ourcases, 
+.joinus {
+	border-bottom:1px solid #eee;
+	line-height:24px;
+	min-height:300px;
+}
+
+#content h2 {
+	margin:10px 0px 20px 0px;
+}
+
+.about {
+	min-height:270px;
+	padding-top:30px;
+	border-top:1px solid #eee;
+}
+
+.about p {
+	margin:0 0 20px 0;
+	line-height:22px;
+}
+
+.logos {
+	width:41%;
+	float:right;
+	margin:10px 0px 20px 0px;
+}
+
+.kchance, .lvmama, .joyu, .joyulf,
+ .campsort, .joyuyx, .joyult,.joyuip {
+	width:154px;
+	height:36px;
+	background:url(../images/icologo.png) no-repeat;
+	display:block;
+	float:left;
+}
+
+.kchance:hover {
+	background-position:0 -53px;
+}
+
+.lvmama {
+	width:142px;
+	height:35px;
+	background-position:0 -117px;
+	margin-left:50px;
+}
+
+.lvmama:hover {
+	background-position:0 -165px;
+}
+
+.joyu {
+	width:222px;
+	height:40px;
+	background-position:0 -225px;
+	margin:20px 60px;
+}
+
+.joyu:hover {
+	background-position:0 -284px;
+}
+
+.joyulf {
+	clear:both;
+	width:146px;
+	height:34px;
+	background-position:0 -492px;
+}
+
+.joyulf:hover {
+	background-position:0 -535px;
+}
+
+.joyult {
+	width:126px;
+	height:26px;
+	background-position:0 -713px;
+	margin:24px 0px 0px 40px;
+}
+
+.joyult:hover {
+	background-position:0 -759px;
+}
+
+.campsort {
+	clear:left;
+	width:86px;
+	height:48px;
+	background-position:0 -355px;
+	margin:20px 0 0 0px;
+}
+
+.campsort:hover {
+	background-position:0 -419px;
+}
+
+.joyuyx {
+	width:124px;
+	height:44px;
+	background-position:0 -588px;
+	margin:-14px 0px 0px 60px;
+}
+
+.joyuyx:hover {
+	background-position:0 -646px;
+}
+
+.joyuip {
+	width:94px;
+	height:44px;
+	background-position:-116px -357px;
+	margin:20px 0 0 30px;
+}
+
+.joyuip:hover {
+	background-position:-116px -419px;
+}
+
+
+/**
+ * 游器服务
+ */
+.service {
+	background:url(../images/map.png) 24px top no-repeat;
+	height:350px;
+}
+
+#content .service h2, 
+#content .joinus h2, 
+#content .ourcases h2 {
+	margin:40px 0 20px 0;
+}
+
+.service_cont {
+	margin:0 0 30px 0;
+}
+
+.service_cont a {
+	width:49%;
+	float:left;
+	height:24px;
+	line-height:24px;
+}
+
+/**
+ * 游器案例
+ */
+.ourcases {
+	background:url(../images/casesbg.png) 575px 35px no-repeat;
+	height:350px;
+	overflow:hidden;
+}
+
+.ourcases ul {
+	margin: 0 0 20px 0;
+}
+ 
+
+/**
+ * 奇兵团
+ */
+.joinus {
+	background:url(../images/joinus.png) 25px top no-repeat;
+}
+
+.joinus p  {
+	margin-bottom:20px;
+}
+
+.joinus p a {
+	color:#29a6e8;
+}
+
+.joinus p a:hover {
+	color:#f1784d;
+}
+
+/**
+ * 游器新闻
+ */
+.news {
+	width:56%;
+	float:left;
+}
+
+.news h4 { 
+	margin-top:30px;
+	height:34px;
+	letter-spacing:0.1em;
+}
+
+.news h4 a {
+	width:20%; 
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	float:left; 
+	color:#333;
+	*width:19%; 
+}
+
+.news h4 a:hover {
+	color:#fff; 
+	background:#29a6e8;
+	position:relative;
+}
+
+.news h4 a.tabactive {
+	color:#fff; 
+	background:#29a6e8;
+	position:relative;
+}
+
+.kncnews {
+	margin-top:10px;
+}
+
+.kncnews dl {
+	margin-bottom:20px;
+}
+	
+.kncnews dt {
+	font-size:16px;
+	padding-bottom:4px;
+}
+
+.kncnews dt a {
+	color:#29a6e8;
+}
+
+.kncnews a:hover {
+	color:#f1784d;
+}
+
+.newsplay {
+	display:none;
+}
+
+/**
+ * 景界
+ */
+.nvision {
+	width:38%;
+	float:right;
+	position:relative;
+	border-left:1px solid #eee;
+	padding-top:32px;
+	height:238px;
+	background:url(../images/kcimg.png) no-repeat 224px -350px; 
+}
+
+.nvisionpic {
+	width:137px;
+	height:184px;
+	overflow:hidden;
+	position:absolute;
+	z-index:0;
+	left:51px;
+	top:36px;
+}
+
+.nvisionpic ul {
+	width:1000px;
+	position:absolute;
+}
+
+.nvisionpic li {
+	width:137px;
+	height:184px;
+	float:left;
+}
+
+.nvisionpic li a {
+	width:135px;
+	height:182px;
+	display:block;
+	position:relative;
+}
+
+.nvisionpic img {
+	width:135px;
+	height:182px;
+	border:1px solid #eee;
+	position:relative;
+}
+
+.nvisionpic i {
+	width:64px;
+	height:64px;
+	position:absolute;
+	z-index:20;
+	top:30%;
+	left:28%;
+	display:block;
+	background:url(../images/icons.png) no-repeat left -433px;
+}
+
+.prev {
+	display:none;
+	width:11px;
+	height:21px;
+	display:block;
+	position:relative;
+	top:80px;
+	left:20px;
+	z-index:2;
+	background:url(../images/arrow.png) no-repeat left -250px;
+}
+
+.next {
+	display:block;
+	width:11px;
+	height:21px;
+	position:relative;
+	top:60px;
+	left:335px;
+	z-index:2;
+	background:url(../images/arrow.png) no-repeat -23px -250px;
+}
+
+.prev:hover {
+	display:block;
+	background:url(../images/arrow.png) no-repeat left -276px;
+}
+
+.next:hover {
+	background:url(../images/arrow.png) no-repeat -23px -276px;
+}
+
+.nvision .more {
+	width:88px;
+	position:absolute;
+	top:130px;
+	left:220px;
+	*top:130px;
+}
+
+/*linkbox*/
+#friendLink h2 {
+	margin:40px 0 0 0;
+}
+
+.link {
+	margin:10px 0 30px 0;
+}
+
+.link a {
+	/*width:11%;*/
+	float:left;
+	height:30px;
+	line-height:30px;
+	margin:0 40px 0 0;
+}

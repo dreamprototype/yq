@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/**右侧栏**/
+#social {
+	position: fixed;
+	right: 15px;
+	bottom:105px;
+	height:200px;
+	z-index:900;
+}
+
+.social_li {
+	width:35px;
+	height:35px;
+	border:1px solid #29a6e8;
+	margin-bottom:5px;
+	position:relative;
+	filter:alpha(opacity=90); 
+	-moz-opacity:0.9; 
+	-khtml-opacity:0.9; 
+	opacity:0.9;
+	background:url(../images/icon-social.png) no-repeat #fff;
+	z-index:900;
+	overflow:visible;
+	/**width:auto;
+	*height:auto;*/
+}
+
+.kweibo {
+	background-position: 10px -35px;
+}
+
+.researchweibo {
+	background-position: 10px -35px;
+}
+
+.phone {
+	background-position: 10px -177px;
+	font-family:Century Gothic;
+	letter-spacing:0.05em;
+	font-size:16px;
+}
+
+.download {
+	background-position: 10px -483px;
+}
+
+.gotop {
+	background-position: 10px -367px;
+}
+
+.wechat {
+	background-position: 9px -293px;
+}
+
+.wechat:hover {
+	opacity:1;
+}
+
+.social_li a {
+	display: none;
+	position: absolute;
+	color:#FFF;
+	background: url(../images/icon-social.png) no-repeat 105px -79px #29a6e8;
+	height: 37px;
+	line-height: 37px;
+	right:0;
+	top:-1px;
+	padding:0 0 0 10px;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	transition:none;
+	z-index:999;
+}
+
+.kweibo a {
+	width: 120px;
+}
+
+.researchweibo a {
+	width: 186px;
+	background-position:171px -79px;
+}
+
+.phone a {
+	width: 270px;
+	background-position:255px -221px;
+}
+
+.download a {
+	width:120px;
+	background-position:105px -542px;
+}
+
+.wechat a {
+	width:160px;
+	height:160px;
+	background:#ebf8ff;
+	top:-124px;
+	right:-1px;
+	padding:0;
+}
+
+.gotop a {
+	width:35px;
+	height:27px;
+	background:#29a6e8;
+	text-align: center;
+	font-size: 12px;
+	line-height:14px;
+	padding:5px 0;
+	letter-spacing:0.05em;
+}
+
+.wechat img {
+	width:148px;
+	height:148px;
+	margin:6px;
+}
+
+
+/********Float浮动********/
+#wrap .clear { clear:both;}
+#wrap .floatL { float:left;}
+#wrap .floatR { float:right;}
+
+
+/********Width宽度********/
+#wrap .width18 { width:18%;}
+#wrap .width23 { width:23%;}
+#wrap .width28 { width:28%;}
+#wrap .width30 { width:30%;}
+#wrap .width32 { width:32%;}
+#wrap .width34 { width:34%;}
+#wrap .width35 { width:35%;}
+#wrap .width36 { width:36%;}
+#wrap .width38 { width:38%;}
+#wrap .width40 { width:40%;}
+#wrap .width45 { width:45%;}
+#wrap .width47 { width:47%;}
+#wrap .width50 { width:50%;}
+#wrap .width52 { width:52%;}
+#wrap .width55 { width:55%;}
+#wrap .width57 { width:57%;}
+#wrap .width60 { width:60%;}
+#wrap .width65 { width:65%;}
+#wrap .width70 { width:70%;}
+#wrap .width75 { width:75%;}
+#wrap .width80 { width:80%;}
+
+
+/********Margin********/
+#wrap .nomargin { margin:0;}
+#wrap .nomarginT { margin-top:0;}
+#wrap .nomarginR { margin-right:0;}
+#wrap .nomarginB { margin-bottom:0;}
+#wrap .nomarginL { margin-left:0;}
+
+#wrap .marginT10 { margin-top:10px;}
+#wrap .marginT15 { margin-top:15px;}
+#wrap .marginT20 { margin-top:20px;}
+#wrap .marginT25 { margin-top:25px;}
+#wrap .marginT30 { margin-top:30px;}
+#wrap .marginT35 { margin-top:35px;}
+#wrap .marginT40 { margin-top:40px;}
+#wrap .marginT45 { margin-top:45px;}
+#wrap .marginT50 { margin-top:50px;}
+#wrap .marginT55 { margin-top:55px;}
+#wrap .marginT60 { margin-top:60px;}
+#wrap .marginT65 { margin-top:65px;}
+#wrap .marginT70 { margin-top:70px;}
+#wrap .marginT80 { margin-top:80px;}
+#wrap .marginT85 { margin-top:85px;}
+#wrap .marginT90 { margin-top:90px;}
+#wrap .marginT100 { margin-top:100px;}
+#wrap .marginT120 { margin-top:120px;}
+
+#wrap .marginR10 { margin-right:10px;}
+#wrap .marginR15 { margin-right:15px;}
+#wrap .marginR20 { margin-right:20px;}
+#wrap .marginR25 { margin-right:25px;}
+#wrap .marginR30 { margin-right:30px;}
+#wrap .marginR35 { margin-right:35px;}
+#wrap .marginR40 { margin-right:40px;}
+#wrap .marginR45 { margin-right:45px;}
+#wrap .marginR50 { margin-right:50px;}
+
+#wrap .marginL10 { margin-left:10px;}
+#wrap .marginL15 { margin-left:15px;}
+#wrap .marginL20 { margin-left:20px;}
+#wrap .marginL25 { margin-left:25px;}
+#wrap .marginL30 { margin-left:30px;}
+#wrap .marginL35 { margin-left:35px;}
+#wrap .marginL40 { margin-left:40px;}
+#wrap .marginL45 { margin-left:45px;}
+#wrap .marginL50 { margin-left:50px;}
+
+
+/********Padding********/
+#wrap .nopadding { padding:0;}
+#wrap .nopaddingT { padding-top:0;}
+#wrap .nopaddingR { padding-right:0;}
+#wrap .nopaddingB { padding-bottom:0;}
+#wrap .nopaddingL { padding-left:0;}
+
+#wrap .paddingT10 { padding-top:10px;}
+#wrap .paddingT15 { padding-top:15px;}
+#wrap .paddingT20 { padding-top:20px;}
+#wrap .paddingT25 { padding-top:25px;}
+#wrap .paddingT30 { padding-top:30px;}
+
+#wrap .paddingL30 { padding-left:30px;}
+
+
+/********Border边框********/
+#wrap .noborder { border:none;}
+#wrap .noborderT { border-top:none;}
+#wrap .noborderR { border-right:none;}
+#wrap .noborderB { border-bottom:none;}
+#wrap .noborderL { border-left:none;}
+
+/********Background背景********/
+#wrap .nobg { background:none;}
+
+/********Line-height行高********/
+#wrap .lineheight14 { line-height:14px;}
+#wrap .lineheight18 { line-height:18px;}
+#wrap .lineheight24 { line-height:24px;}
+#wrap .lineheight30 { line-height:30px;}
+
+
+/********List 列表********/
+#wrap .noliststyle { list-style:none;}
+#wrap .list_disc li { list-style:disc;}
+#wrap .list_square li { list-style:square;}
+
+
+/********Font********/
+#wrap .KaiTi { font-family:"KaiTi";}
+#wrap .bold { font-weight:bold;}
+
+#wrap .indent, #wrap .indent p { text-indent:28px;}
+#wrap p.noindent, #wrap .noindent { text-indent:0;}
+#wrap .center { text-align:center;}
+#wrap .left { text-align:left;}
+#wrap .right { text-align:right;}
+
+#wrap .font12 { font-size:12px;}
+
+/********Table********/
+#wrap .top { vertical-align:top;}
+#wrap .middle { vertical-align:middle;}
+
+
+/********隐藏 显示********/
+.hide {	display: none;}

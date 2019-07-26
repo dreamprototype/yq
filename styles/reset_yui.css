@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Yahoo(YUI)¡¯s CSS Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0;
+} 
+
+table { 
+    border-collapse: collapse;
+    border-spacing: 0; 
+} 
+
+fieldset,img { 
+    border: 0; 
+} 
+
+address,caption,cite,code,dfn,em,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+ul { 
+    list-style: none; 
+} 
+
+caption,th { 
+    text-align: left; 
+} 
+
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+} 
+
+q:before,q:after { 
+    content:¡±; 
+} 
+
+abbr,acronym {
+    border: 0; 
+}
+
+a, a:hover {
+	cursor:pointer;
+	text-decoration:none;
+	*font-family:Microsoft Yahei, Tahoma, Verdana, Arial, Microsoft JhengHei, SimSun;	/*IE7*/
+}
+
+html, body {
+	position:relative;
+	z-index:1;
+	min-width:980px;
+	height:100%;
+	-webkit-font-smoothing:antialiased;
+}
+
+body {
+	font-size:14px;
+	line-height:22px;
+	color:#666;
+	font-family:Microsoft Yahei, Tahoma, Verdana, Arial, Microsoft JhengHei, YouYuan, SimSun;
+}
+
+input, button {		/*IE7ÏÂ°´Å¥×ÖÌå*/
+	border:none;
+	cursor:pointer;
+	*+font-family:Microsoft Yahei;		/*IE7*/
+}
+
+@font-face {
+	font-family:Century Gothic;
+	src:url(../font/GOTHIC_1.ttf);
+}

@@ -1,0 +1,778 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+
+ul { 
+    list-style:none;
+}
+
+ol { 
+    margin:0 0 0 20px;
+	list-style-type:decimal;
+	*margin-left:25px;
+}
+
+body { 
+	font:14px/1.5 Tahoma, Verdana, Arial, '\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', '\5b8b\4f53', Sans-Serif;
+	*font-family:'\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Sans-Serif;
+	background:url(../images/banner1.jpg) center top no-repeat;
+}
+
+button, a {		/*IE7*/
+	border:none;
+	*+font-family:"Microsoft Yahei";		/*IE7*/
+	cursor:pointer;
+}
+
+
+/* ===================================================================
+   Typography 对应专题样式
+   ================================================================== */
+h2, h3, h4, h5 {
+	color:#333;
+}
+
+h1 {
+	font-size:26px;
+	letter-spacing:4px;
+	margin:0 0 0.2em 0;
+}
+
+h2 {
+	font-size:20px;
+	letter-spacing:0.1em;
+	margin:10px 0;
+	padding:20px 0 0 0;
+	border-top:1px solid #eee;
+}
+
+h3 {
+	font-size:18px;
+	margin:0 0 5px 0;
+	letter-spacing:0.15em;
+}
+
+h4 {
+	font-size:16px;
+	letter-spacing:0.15em;
+}
+
+h5 { 
+	font-size:15px;
+}
+
+h6 { 
+	font-size:12px;
+}
+
+a { 
+	text-decoration:none; 
+	cursor:pointer;
+	color:#333;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+a:hover, 
+a:active {
+	color:#f4b06b;
+}
+
+a img {
+	border:none;
+}
+
+p {
+	margin:0 0 8px 0;
+}
+
+strong, 
+.black {
+	color:#333;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	margin:5px 0;
+}
+
+th {
+	background:#f4b06b;
+	color:#fff;
+	font-size:15px;
+	letter-spacing:0.05em;
+	line-height:18px;
+	border:1px solid #f4b06b;
+	height:30px;
+	text-align:center;
+	padding:3px 0;
+}
+
+td {
+	padding:3px 5px;
+	background:#fff;
+	border:1px solid #ffe4ca;
+}
+
+#main .row td, .row {
+	background:#fff5eb;
+}
+
+.sub-divider {
+	border-top:1px dotted #eee;
+	padding-top:30px;
+}
+
+.sub-borderT {
+	border-top:1px solid #eee;
+	padding-top:30px;
+}
+
+i {
+	margin-right:10px;
+}
+
+/*END*/
+
+#wrap {
+	overflow:hidden;
+	color:#666;
+	width:100%;
+	min-width:980px;
+	max-width:1920px;
+	margin:0 auto;
+}
+
+/* ===================================================================
+   header
+   ================================================================== */
+#wapheader {
+	width:100%;
+	background:url(../images/navline.png) repeat-x left bottom;
+}
+
+#header {
+	width:980px;
+	height:80px;
+	margin:0 auto;
+}
+
+#logo {
+	display:block;
+	width:230px;
+	height:52px;
+	margin:15px 0 0 10px;
+	float:left;
+	-webkit-transition: 0;
+	-moz-transition: 0;
+	-o-transition: 0;
+	-ms-transition: 0;
+	transition: 0;
+}
+
+
+/* ===================================================================
+   navbar
+   ================================================================== */
+#nav {
+	height:42px;
+	width:600px;
+	float:right;
+	z-index:2000;
+	margin-top:36px;
+}
+	
+#nav ul {
+	height:42px;
+}
+
+#nav li {
+	float:left;
+	width:80px;
+	text-align:center;
+	margin:0 20px 0 0;
+}
+
+#nav a {
+	height:42px;
+	line-height:42px;
+	font-size:16px;
+	display:block;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	transition: 0s;
+	color:#fff;
+}
+
+#nav li a:hover,
+#home .home a,
+#RusticLuxuryHotel1 .RusticLuxuryHotel1 a, 
+#RusticLuxuryHotel2 .RusticLuxuryHotel2 a, 
+#RusticLuxuryHotel3 .RusticLuxuryHotel3 a, 
+#RusticLuxuryHotel4 .RusticLuxuryHotel4 a,
+#RusticLuxuryHotel5 .RusticLuxuryHotel5 a {
+	border-bottom:2px solid #efd65e;
+	color:#efd65e;
+}
+
+#nav .navCont {
+	float:left;
+	position:relative;
+}
+
+#nav .dropdown {
+	background:#f3a95e;
+	position:absolute;
+	left:0;
+	top:44px;
+	width:100%;
+	height:auto;
+	display:none;
+	filter:alpha(opacity=90); 
+    -moz-opacity:0.9; 
+    -khtml-opacity:0.9; 
+	opacity:0.9;
+	border-bottom:none;
+}
+
+#nav .RusticLuxuryHotel3 ul {
+	width:150px;
+}
+
+#nav .RusticLuxuryHotel4 ul {
+	width:180px;
+}
+
+#nav .dropdown li {
+	display:block;
+	float:none;
+	width:100%;
+}
+
+#nav .dropdown a {
+	float:none;
+	font-size:14px;
+	display:block;
+	width:100%;
+	text-align:center;
+	color:#fff;
+	height:30px;
+	line-height:30px;
+	border-bottom:none;
+}
+
+#nav .dropdown a:hover, 
+#nav .dropdown a:active {
+	border:none;
+	color:#fff;
+	background:#f09d49;
+}
+
+#nav .hoverBg {
+	border-bottom:2px solid #efd65e;
+	color:#efd65e;
+}
+
+/*END*/
+
+
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	background:url(../images/title.png) center 80px no-repeat;
+	height:400px;
+	margin:0 0 100px 0;
+}
+/*END*/
+
+#footer {
+	height:340px;
+	overflow:hidden; 
+	font-size:12px;
+	background:url(../images/footbg.jpg) repeat;
+	color:#d2c0af;
+	margin:20px auto 0 auto;
+}
+
+.footer { 
+	margin:96px auto 0 auto;
+	overflow:hidden;
+	width:980px;
+}
+
+.contact { 
+	float:right; 
+	margin:0 20px 0 0px; 
+	width:36%;
+	line-height:16px;
+}
+
+.contact p { 
+	margin:0 0 3px 0;
+}
+
+.contact a {
+	color:#f4b06b;
+}
+
+.contact a:hover, 
+.contact a:active {
+	color:#95ba12;
+}
+
+#footer .title_foot { 
+	font-size:14px; 
+	font-weight:700;
+	margin:0 0 8px 0;
+}
+
+.eng { 
+	font-size:11px; 
+	font-family:tahoma; 
+	line-height:14px;
+}
+
+.botlogo {
+	float:left;
+	width:190px;
+	height:45px;
+}
+
+.botlogo a {
+	display:block;
+	width:190px;
+	height:45px;
+	margin-top:50px;
+	background:url(../images/footlogo.png) no-repeat;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+#main {
+	overflow:hidden;
+	width:100%;
+}
+
+#content {
+	width:980px;
+	min-height:400px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:60px;
+}
+
+.portfolio_stage {
+	overflow:hidden;
+	margin:0 auto;
+	zoom:1;
+}
+
+.content {
+	overflow:hidden;
+	margin:0 auto 40px auto;
+	zoom:1;
+}
+
+.main {
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+
+/**
+ * 返回顶部
+ */
+.gotopbtn {
+	background:url(../images/top.png) no-repeat;
+	display:inline-block;
+	width:40px;
+	height:53px;
+	z-index:1000;
+	position:fixed;
+	cursor:pointer;
+	right:100px;
+	top:auto;
+	bottom:300px;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	transition: 0s;
+}
+
+.gotopbtn:hover {
+	background-position:0 -64px;
+}
+/*END*/
+
+
+/**
+ * title
+ */
+.title {
+	background:url(../images/line.png) no-repeat center center;
+	text-align:center;
+	margin:10px 0 20px 0;
+	font-weight:700;
+	color:#666;
+}
+/*END*/
+
+
+/**
+ * 概念特征
+ */
+.relationship h5 {
+	margin-bottom:5px;
+} 
+
+.relationship li {
+	margin:0 0 5px 0;
+}
+
+.relationship img {
+	margin:18px 0 5px 0;
+}
+
+
+/**
+ * 经验总结
+ */
+
+.factor {
+	background:url(../images/img006.jpg) no-repeat top center;
+	height:200px;
+	margin-top:40px;	
+}
+
+/**
+ * 客群访谈
+ */
+.information {
+	background:#fff0e2;
+	padding:60px 14px 0px 14px;
+	height:200px;
+}
+
+.information dt {
+	line-height:26px;
+}
+
+/**
+ * 个性化风格设计
+ */
+ .styledesign img {
+	margin-top:14px;
+}
+ 
+.styledesign li {
+	width:25%;
+	float:left;
+	text-align:center;
+	margin-bottom:10px;	
+}
+
+.styledesign1 img {
+	margin-top:14px;
+}
+
+.styledesign1 ul {
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+/**
+ * 设计导则
+ */
+/*规划布局与功能流线*/
+.functionpic {
+	overflow:hidden;
+}
+
+.functionpic ul {
+	margin-top:10px;
+}
+
+.functionpic li {
+	width:30%;
+	text-align:center;
+	float:left;
+	margin-bottom:14px;
+}
+
+.functionpic img {
+	border:1px solid #ddd;
+	margin-bottom:4px;
+}
+
+.marginLR {
+	margin:0 40px;
+}
+
+.functionpic1 {
+	overflow:hidden;
+}
+
+.functionpic1 li {
+	text-align:center;
+	float:left;
+	margin-bottom:14px;
+}
+
+.functionpic1 img {
+	border:1px solid #ddd;
+	margin-bottom:4px;
+}
+
+/*客房间距*/
+.rspace li {
+	float:left;
+	width:25%;
+	font-weight:700;
+}
+
+/*客房设计*/
+.roomdesgin  {
+	overflow:hidden;
+}
+
+.roomdesgin img {
+	margin:10px 0;
+}
+
+.roomarea {
+	overflow:hidden;
+}
+
+.roomarea h5 {
+	margin-bottom:10px;
+}
+
+.roomarea table {
+	margin-bottom:14px;
+}
+
+.roomarea1 {
+	overflow:hidden;
+}
+
+.roomarea1 li {
+	width:33%;
+	float:left;
+	text-align:center;
+}
+
+/*景观设计*/
+
+.landscape {
+	overflow:hidden;
+}
+
+.landscape img {
+	margin-bottom:4px;
+}
+
+.landscapeul li {
+	width:33%;
+	text-align:center;
+	float:left;
+}
+
+.landscapeul1 li {
+	width:25%;
+	text-align:center;
+	float:left;
+}
+
+.landscapeul2 li {
+	width:50%;
+	text-align:center;
+	float:left;
+}
+
+/**
+ * 他山之石
+ */
+/*美国安缦吉吉度假村*/
+.casepic li {
+	width:33%;
+	float:left;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.casepic1 {
+	overflow:hidden;
+}
+
+.casepic1 li {
+	width:50%;
+	float:left;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.casepic2 {
+	overflow:hidden;
+	margin-top:10px;
+}
+
+.casepic2  li {
+	width:30%;
+	float:left;
+}
+
+.pheight {
+	height:242px;
+	background:#fff0e2;
+	padding:32px 22px;
+}
+
+/**
+ * 游器实践
+ */
+/*帐篷客溪龙茶谷度假酒店*/
+.awards {
+	margin:10px 0 40px 0;
+	overflow:hidden;
+}
+
+.awards li {
+	float:left;
+	width:20%;
+}
+
+.awards p {
+	margin:1% 10% 0 0;
+}
+
+/*功能分区*/
+.zoning dt, 
+.zoning dd {
+	float:left;
+	padding:4px;
+}
+ 
+.zoning dl {
+	clear:both;
+	overflow:hidden;
+	margin:1px 0 0 0;
+	background:#fff5eb;
+}
+
+.zoning dt {
+	width:7%;
+	margin-right:1%;
+	height:100%;
+	background:#f4b06b;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+}
+
+.zoning dd {
+	width:9%;
+	padding:4px 0;
+}
+
+.zoning .height50 dt {
+	height:50px;
+	line-height:50px;
+}
+
+.zoning .height50 dd {
+	padding:6px 0 0 0;
+	line-height:18px;
+}
+
+.zoning .height55 dt {
+	height:55px;
+	line-height:55px;
+}
+
+.zoning .height55 dd {
+	padding:6px 0 0 0;
+	line-height:18px;
+}
+
+.zoning .height70 dt {
+	height:70px;
+	line-height:70px;
+}
+
+.zoning .height70 dd {
+	padding:6px 0 0 0;
+	line-height:18px;
+}
+
+.zoning .row {
+	background:#fff;
+}
+
+.zoning .tablebox {
+	border:1px solid #ffe4ca;
+}
+
+/*客房功能细分*/
+.column5 div {
+	float:left;
+	width:20%;
+	text-align:center;
+}
+
+.column5 h5 {
+	background:#f4b06b;
+	color:#fff;
+	font-weight:700;
+	padding:5px;
+	margin:0 6%;
+	letter-spacing:0.1em;
+}
+
+.column5 ul {
+	margin:0 6%;
+	background:#fff5eb;
+	height:120px;
+	padding:10px;
+}
+
+.column5 .fst h5, 
+.column5 .fst ul {
+	margin-left:0;
+}
+
+/*相关链接*/
+.campsort {
+}
+
+.news li {
+	float:left;
+	width:40%;
+	margin:0 0 5px 0;
+}
+
+.news a {
+	margin:0 10% 0 0;
+	color:#666;
+}
+
+.news a:hover, 
+.news a:active {
+	color:#f4b06b;
+}

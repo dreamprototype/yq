@@ -1,0 +1,910 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ===================================================================
+   Reset
+   ================================================================== */
+
+html {
+	font-size:100%;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,figure,form,fieldset,input,legend,pre,abbr {
+	margin:0;
+	padding:0;
+}
+
+fieldset, iframe, img { border:0; }
+
+sup {
+	font-size:smaller;
+	*vertical-align:top;
+}
+
+sub {
+	font-size:smaller;
+	*vertical-align:bottom;
+}
+
+ul { list-style:none; }
+
+ol { 
+    margin:0 0 0 20px;
+    list-style-type:decimal;
+    *margin-left:25px;
+}
+
+
+/* ===================================================================
+   Typography 对应专题样式
+   ================================================================== */
+
+body { 
+    font:14px/1.5 Tahoma, Verdana, Arial, '\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', '\5b8b\4f53', Sans-Serif;
+    *font-family:'\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Sans-Serif;
+	background:url(../images/banner.jpg) center top no-repeat;
+}
+
+button, a {     /*IE7*/
+    border:none;
+    *+font-family:"Microsoft Yahei";
+    cursor:pointer;
+}
+
+h1, h2, h3, h4, h5 { color:#333; }
+
+h1, h3, h4 { font-weight:normal; }
+
+h1 {
+    font-size:26px;
+    letter-spacing:4px;
+    margin:6px 0 0.2em 0;
+}
+
+h2 {
+    font-size:20px;
+    letter-spacing:0.18em;
+    margin:10px 0;
+}
+
+h2 a,
+h4 a {
+	color:#333;
+}
+
+h3 {
+    font-size:18px;
+    letter-spacing:0.15em;
+    margin:0 0 6px 0;
+}
+
+h4 {
+    font-size:16px;
+    letter-spacing:0.1em;
+    margin:0 0 2px 0;
+}
+
+h5 { 
+    font-size:15px; 
+    margin:0 0 5px 0;
+}
+
+h6 { 
+    font-size:12px;
+    font-weight:normal;
+}
+
+a { 
+    text-decoration:none; 
+    cursor:pointer;
+    color:#666;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    transition:all 0.5s;
+}
+
+a:hover, a:active { color:#55bb52; }
+
+strong, .black { color:#333; }
+
+p { margin:0 0 8px 0; }
+
+i { margin-right:10px; }
+
+@font-face {
+	font-family:Century Gothic;
+	src:url('../../../font/GOTHIC_1.ttf');
+	font-weight:normal;
+}
+
+.more {
+	font-family:Century Gothic;
+}
+
+
+/**
+ * Table 表格
+ */
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+th {
+    background:#00b6de;
+    color:#fff;
+    font-size:15px;
+    letter-spacing:0.05em;
+    line-height:18px;
+    border:1px solid #6cd6e9;
+    height:30px;
+    text-align:center;
+}
+
+td {
+    padding:5px 5px;
+    background:#fff;
+    border:1px solid #d5f8fe;
+}
+
+#main .row td, .row {
+	background:#d3f3ff;
+}
+
+
+/**
+ * Column 列 / 分栏
+ */
+
+.column {
+    overflow:hidden;
+    margin-left:-40px;
+    display: table;
+    content: "";
+}
+
+.column:before, .column:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.column:after { clear: both; }
+
+.column div {
+    float:left;
+    min-height:1px;
+    margin-left:40px;
+    display:block;
+}
+
+/* 三栏 */
+.col-3 { width:230px; }	/* 加在子级div中 */
+
+
+
+/* 四栏 */
+.column-4 { margin-left:-53px; }	/* 加在父级div中 */
+
+.column .col-4 { 	/* 加在子级div中 */
+    width:200px;
+    margin-left:53px;
+}
+
+.column .col-bg-4 {
+	overflow:hidden;
+	margin-left:33px;
+	width:218px;
+	height:350px;
+}
+
+.col-bg-4 div {
+	overflow:hidden;
+	margin:0;
+	width:auto;
+	padding:20px;
+}
+
+
+/*END*/
+
+
+/**
+ * List 列表
+ */
+
+.li-spacing-2x, .li-spacing-2x li { margin:0 0 20px 0; }
+
+.li-spacing, .li-spacing li { margin:0 0 10px 0; }
+
+
+/**
+ * Paragraph 段落
+ */ 
+
+.paragraph-spacing h4, 
+.paragraph-spacing h5 { 
+    margin:20px 0 0 0;
+}
+/*END*/
+
+
+/**
+ * title
+ */
+
+.title {
+	height:66px;
+	text-align:center;
+	background:url(../images/line.png) no-repeat center bottom;
+}
+
+.title a {
+	color:#55bb52;
+	display:block;
+}
+
+.title a:hover,
+.title a:active {
+	color:#eb977e;
+}
+
+.subtitle {
+    color:#00b6de;
+    margin:0 0 10px 0;
+	display:inline-block;
+}
+
+.sub-title {
+    text-align:center;
+    margin:20px 0 5px 0;
+	letter-spacing:0.05em;
+}
+
+.subtitle3 {
+	color:#00b6de;
+	font-weight:normal;
+	font-size:18px;
+}
+
+#wrap .fst-title {
+    border-top:none;
+    margin-top:0;
+    padding-top:0;
+}
+/*END*/
+
+
+/**
+ * divider 分隔线
+ */
+
+.divider {
+    border-top:1px solid #eee;
+    padding-top:30px;
+}
+
+.sub-divider {
+    border-top:1px dotted #eee;
+    padding-top:30px;
+}
+/*END*/
+
+
+/**
+ * 返回顶部
+ */
+.gotopbtn {
+    background:url(../images/top.png) no-repeat;
+    display:inline-block;
+    width:46px;
+    height:44px;
+    z-index:1000;
+    position:fixed;
+    cursor:pointer;
+    right:100px;
+    top:auto;
+    bottom:300px;
+}
+
+.gotopbtn:hover {
+    background-position:0 -62px;
+}
+/*END*/
+
+
+/* ===================================================================
+   Basic 基础框架
+   ================================================================== */
+   
+#wrap {
+    overflow:hidden;
+    color:#666;
+    width:100%;
+    min-width:980px;
+    max-width:1920px;
+	margin:0 auto;
+}
+/*END*/
+
+
+/* ===================================================================
+   header
+   ================================================================== */
+#header {
+    width:980px;
+    height:100px;
+    margin:0 auto;
+}
+
+#logo {
+    display:block;
+    width:212px;
+    height:48px;
+    margin:20px 0 0 10px;
+    float:left;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    -ms-transition:none;
+    transition:none;
+}
+
+
+/* ===================================================================
+   navbar
+   ================================================================== */
+   
+#nav {
+    height:80px;
+    width:600px;
+    float:right;
+    z-index:2000;
+}
+
+#nav li {
+    float:left;
+    text-align:center;
+	height:100%;
+	width:100px;
+	margin-right:1%;
+}
+
+#nav a {
+    height:80px;
+    line-height:80px;
+    font-size:16px;
+    display:block;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition: 0s;
+    -ms-transition: 0s;
+    transition: 0s;
+    color:#378f35;
+	padding-top:3px;
+}
+
+#nav li a:hover,
+#home .home a,
+#WholeRegionTourism1 .WholeRegionTourism1 a, 
+#WholeRegionTourism2 .WholeRegionTourism2 a,
+#WholeRegionTourism3 .WholeRegionTourism3 a,
+#WholeRegionTourism4 .WholeRegionTourism4 a {
+    border-top:3px solid #eb977e;
+	color:#d9856d;
+	padding-top:0;
+}
+
+/*END*/
+
+   
+/* ===================================================================
+   banner
+   ================================================================== */
+#banner {
+	background:url(../images/title.png) 363px 0px no-repeat;
+	height:620px;
+	position:relative;
+	width:980px;
+	margin:0 auto;
+	z-index:2;
+}
+
+#banner div {
+	margin:208px 48px 0 0;
+	float:right;
+	width:524px;
+}
+
+#banner p {
+	color:#fff;
+}
+/*END*/
+
+
+/* ===================================================================
+   footer
+   ================================================================== */
+#footer {
+    height:300px;
+    overflow:hidden; 
+    font-size:12px;
+    color:#fff;
+	background-color:#489b46;
+}
+
+.footer { 
+    margin:70px auto 0 auto;
+    overflow:hidden;
+    width:980px;
+}
+
+.contact { 
+    float:right; 
+    margin:0 20px 0 0px; 
+    width:36%;
+    line-height:16px;
+}
+
+.contact p { margin:0 0 3px 0; }
+
+.contact a { color:#bdf785; }
+
+.contact a:hover, 
+.contact a:active {
+    color:#fff;
+}
+
+#footer .title_foot { 
+    font-size:14px; 
+    font-weight:700;
+    margin:0 0 8px 0;
+}
+
+.eng { 
+    font-size:11px; 
+    font-family:tahoma; 
+    line-height:14px;
+}
+
+.botlogo {
+    float:left;
+    width:190px;
+    height:45px;
+}
+
+.botlogo a {
+    display:block;
+    width:190px;
+    height:45px;
+    margin-top:60px;
+    background:url(../images/footlogo.png) no-repeat;
+}
+/*END*/
+
+
+/* ===================================================================
+   main
+   ================================================================== */
+   
+#main {
+    overflow:hidden;
+    width:100%;
+	background:url(../images/mainbg.jpg) no-repeat center 780px;
+}
+
+#content {
+    width:100%;
+    min-height:400px;
+    margin:0 auto;
+    position:relative;
+    padding-bottom:60px;
+}
+
+.portfolio-stage {
+    overflow:hidden;
+    margin:0 auto;
+    zoom:1;
+}
+
+.content {
+	width:980px;
+    overflow:hidden;
+    margin:0 auto 40px auto;
+    zoom:1;
+}
+/*END*/
+
+/**
+ * 背景
+ */
+.background li {
+    float:left;
+    width:252px;
+    margin:0 0 0 112px;
+}
+
+.background a:hover h3 {
+    color:#eb977e;
+}
+
+.background1 a, 
+.background2 a, 
+.background3 a {
+    color:#666;
+    display:block;
+    height:140px;
+    position:relative;
+    background:url(../images/ICON1.png) no-repeat center top;
+    margin:0 auto;
+}
+
+.background h3 {
+    position:absolute;
+    display:block;
+    margin-top:110px;
+    background:#fff;
+    width:100%;
+    text-align:center;
+	font-weight:bold;
+	padding-bottom:4px;
+}
+
+.background1 a:hover, 
+.background1 a:active {
+    background-position:center -120px;
+}
+
+.background2 a {
+    background-position:center -240px;
+}
+
+.background2 a:hover, 
+.background2 a:active {
+    background-position:center -360px;
+}
+
+.background3 a {
+    background-position:center -480px;
+}
+
+.background3 a:hover, 
+.background3 a:active {
+    background-position:center -600px;
+}
+
+.concept h3 {
+	margin-left:36px;
+	font-weight:bold;
+	color:#55bb52;
+}
+
+.concept a:hover h3 {
+    color:#eb977e;
+}
+
+.concept1 a, 
+.concept2 a, 
+.concept3 a {
+    color:#666;
+    display:block;
+    position:relative;
+    background:url(../images/ICON2.png) no-repeat left 6px;
+    margin:0 auto;
+}
+
+.concept1 a:hover, 
+.concept1 a:active {
+    background-position:left -17px;
+}
+
+.concept2 a {
+    background-position:left -44px;
+}
+
+.concept2 a:hover, 
+.concept2 a:active {
+    background-position:left -76px;
+}
+
+.concept3 a {
+    background-position:left -105px;
+}
+
+.concept3 a:hover, 
+.concept3 a:active {
+    background-position:left -135px;
+}
+
+.concept3 {
+	margin-right:-36px;
+}
+
+.concept3 li {
+	float:left;
+	width:33%;
+	margin:0 0 8px 36px;
+	list-style:disc;
+}
+
+.concept2 p {
+	line-height:26px;
+}
+
+/**
+ * 动态
+ */
+.dynamic img {
+	float:left;
+	margin-right:20px;
+}
+
+.dynamic h3 {
+	font-weight:bold;
+	color:#333;
+}
+
+.dynamic {
+	margin-left:-9%;
+}
+
+.dynamic ul {
+	margin-left:136px;
+}
+
+.dynamic li {
+	float:left;
+	width:24%;
+	margin-left:9%;
+}
+
+.dynamic ul li {
+	margin:0 0 4px 0px;
+	list-style:disc;
+	float:none;
+	width:100%;
+}
+
+.dynamic a:hover {
+	color:#666;
+}
+
+.dynamic a:hover h3 {
+    color:#55bb52;
+}
+
+.dynamic a:hover img {
+	-webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/**
+ * 规划要点
+ */
+.point {
+	overflow:hidden;
+	margin:30px 0 40px 0px;
+}
+
+.point li {
+	float:left;
+	width:16.6%;
+	line-height:20px;
+}
+
+.point a:hover span {
+	color:#f89176;
+}
+
+.point1 a, 
+.point2 a, 
+.point3 a,
+.point4 a,
+.point5 a,
+.point6 a {
+	color:#333;
+	display:block;
+	width:100%;
+	height:132px;
+	position:relative;
+	background:url(../images/ICON3.png) no-repeat center 0px;
+}
+
+.point span {
+	position:absolute;
+	display:block;
+	margin-top:110px;
+	background:#f1f1f1;
+	width:100%;
+	text-align:center;
+	letter-spacing:1px;
+	font-size:16px;
+	line-height:24px;
+}
+
+.point1 a:hover, 
+.point1 a:active {
+	background-position:center -120px;
+}
+
+.point2 a {
+	background-position:center -240px;
+}
+
+.point2 a:hover, 
+.point2 a:active {
+	background-position:center -360px;
+}
+
+.point3 a {
+	background-position:center -480px;
+}
+
+.point3 a:hover, 
+.point3 a:active {
+	background-position:center -600px;
+}
+
+.point4 a {
+	background-position:center -720px;
+}
+
+.point4 a:hover, 
+.point4 a:active {
+	background-position:center -840px;
+}
+
+.point5 a {
+	background-position:center -960px;
+}
+
+.point5 a:hover, 
+.point5 a:active {
+	background-position:center -1080px;
+}
+
+.point6 a {
+	background-position:center -1200px;
+}
+
+.point6 a:hover, 
+.point6 a:active {
+	background-position:center -1320px;
+}
+ 
+/**
+ * 游器经验
+ */
+.experience a {
+	float:left;
+	height:140px;
+}
+
+.experience .middle a {
+	height:300px;
+}
+
+.experience a span {
+	width:100%;
+	text-align:center;
+	color:white;
+}
+
+.experience li {
+	float:left;
+	width:326px;
+}
+
+.experience a:hover,
+.experience a:active {
+	background-color:#333;
+}
+
+.experience a:hover img,
+.experience a:active img {
+	filter:alpha(opacity=70); 
+	-moz-opacity:0.7; 
+	-khtml-opacity:0.7; 
+	opacity:0.7;
+}
+
+/**
+ * 其它专题
+ */
+.review {
+    margin-bottom:80px;
+    overflow:hidden;
+}
+
+.review .title {
+    zoom:1;
+	padding-bottom:0;
+	color:#55bb52;
+}
+
+.review li img {
+    width:190px;
+    height:86px;
+    padding:0;
+    border:none;
+}
+
+.infiniteCarousel {
+    width:980px;
+    position:relative;
+    height:86px;
+    margin:30px 0 0 0;
+}
+
+.infiniteCarousel .wrapper {
+    width:900px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+    overflow: auto;
+    height:86px;
+    margin:0 35px;
+    position:absolute;
+    top:0;
+}
+
+.infiniteCarousel .wrapper ul {
+    width:920px; /* single item * n */
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+}
+
+.infiniteCarousel ul:hover li img { border-color:#ddd; }
+
+.infiniteCarousel ul:hover li:hover img {
+    border-color:#333;
+}
+
+.infiniteCarousel ul li {
+    display:block;
+    float:left;
+    height:88px;
+    padding:0 18px;
+    width:190px;
+}
+
+.infiniteCarousel ul li a img { display:block; }
+
+.infiniteCarousel .arrow {
+    display:block;
+    height:22px;
+    width:15px;
+    background:url(../../include/images/arrow_review.png) 0 0 no-repeat;
+    text-indent:-999px;
+    position:absolute;
+    top:30px;
+    cursor:pointer;
+    outline:0;
+}
+
+.infiniteCarousel .forward {
+    background-position:-20px 0;
+    right:0;
+}
+
+.infiniteCarousel .forward:hover { background-position:-20px -25px; }
+
+.infiniteCarousel .back {
+    background-position:0 0;
+    left:0;
+}
+
+.infiniteCarousel .back:hover { background-position:0 -25px; }

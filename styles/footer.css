@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/********footer********/
+#footer {
+	width:100%;
+	background:#117ab3;
+	color:#eaf2fb;
+	overflow:hidden;
+	font-size:12px;
+	/*position:fixed;
+	bottom:0;*/
+}
+
+#footer a {
+	color:#eaf2fb;
+}
+
+#footer a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+#foot {
+	width:980px;
+	margin:30px auto 20px auto;
+}
+
+#foot div {
+	overflow:hidden;
+}
+
+/*foot top half*/
+.foot {
+	border-bottom:1px solid #1277ae;
+	padding:0 0 30px 0;
+}
+
+.footleft {
+	width:220px;
+	float:left;
+	text-align:center;
+}
+
+.footlogo {
+	height:46px;
+	display:block;
+	margin:20px 0 10px 0;
+}
+
+.footleft ul {
+	height:32px;
+	width:208px;
+	margin:0 0 0 5px;
+}
+
+.footleft li {
+	float:left;
+	width:25%;
+	background:url(../images/divider.png) right center no-repeat;
+}
+
+.footleft li a {
+	height:32px;
+	display:block;
+	background:url(../images/footIcons.png) left top no-repeat;
+}
+
+.footleft .partner a {
+	background-position:0 0;
+}
+
+.footleft .partner a:hover {
+	background-position:0 -40px;
+}
+
+.footleft .friendLink a {
+	background-position:-52px 0;
+}
+
+.footleft .friendLink a:hover {
+	background-position:-52px -40px;
+}
+
+.footleft .contactus a {
+	background-position:-105px 0;
+}
+
+.footleft .contactus a:hover {
+	background-position:-105px -40px;
+}
+
+.footleft .sitemap a {
+	background-position:-156px 0;
+}
+
+.footleft .sitemap a:hover {
+	background-position:-156px -40px;
+}
+
+.footleft .partner {
+	background:url(../images/divider.png) 45px center no-repeat;
+}
+
+.footleft .contactus {
+	background:none;
+}
+
+.footleft .sitemap {
+	background:url(../images/divider.png) 5px center no-repeat;
+}
+
+.contact { 
+	float:right; 
+	margin:20px 20px 0 0px; 
+	width:35%;
+	line-height:24px;
+	font-size:14px;
+}
+
+.contact p { 
+	margin:0 ;
+}
+
+.footCont p { 
+	margin:0;
+}
+
+.foot .contact p.marginB10 {
+	margin-bottom:10px;
+}
+
+.contact a {
+	color:#e1bca9;
+}
+
+#footer .title_foot { 
+	font-size:14px; 
+	font-weight:bold;
+	margin:0 0 8px 0;
+}
+
+.eng { 
+	font-size:14px; 
+	font-family:Microsoft Yahei,tahoma; 
+	line-height:24px;
+}
+
+/*foot bottom half*/
+.footCont {
+	clear:both;
+	border-top:1px solid #1683be;
+	padding:10px 0 0 0;
+}
+
+.footCont .floatL {
+	padding:5px 0 0 0;
+}
+
+.footCont .floatR {
+	margin-top:23px;
+}
+
+.footCont .floatR a, .footCont .floatR div {
+	float:right;
+	margin-left:5px;
+}
+
+.sgs {
+	background:url(../images/shgs.png) no-repeat;
+	width:60px;
+	height:20px;
+	display:block;
+	padding-left:25px;
+}
+
+.bean {
+	background:url(../images/bean.png) no-repeat;
+	width:175px;
+	height:20px;
+	display:block;
+	padding-left:25px;
+}
+
+.baidu {
+	margin-top:15px;
+	width:20px;
+	*width:27px;
+}
+
+.cnzz {
+	margin-top:15px;
+	display:block;
+	width:52px;
+}
+
+.foot_360 {
+	margin-top:10px;
+}
